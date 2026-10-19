@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropPulse Intelligence | Permit Radar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0b0f17] text-slate-200 font-sans min-h-screen flex antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Sidebar Navigation -->
+    <aside class="w-64 bg-[#0e131f] border-r border-slate-800/80 p-6 flex flex-col justify-between shrink-0 hidden md:flex">
+        <div>
+            <div class="flex items-center gap-2 mb-10">
+                <div class="h-6 w-6 rounded bg-emerald-500 flex items-center justify-center font-bold text-black text-xs">P</div>
+                <h1 class="text-lg font-semibold tracking-tight text-white">Prop<span class="text-emerald-400">Pulse</span></h1>
+            </div>
+            <nav class="space-y-1 text-sm font-medium">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+                    <span>Permit Radar</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition">
+                    <span>Distressed Assets</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition">
+                    <span>Analytics</span>
+                </a>
+            </nav>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 text-xs text-slate-500 flex items-center justify-between">
+            <span>HB Accela Feed</span>
+            <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+            </span>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col p-6 lg:p-10 max-w-7xl mx-auto w-full overflow-y-auto">
+        
+        <!-- Header & Action -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+            <div>
+                <h2 class="text-2xl font-bold tracking-tight text-white">Huntington Beach Permits</h2>
+                <p class="text-sm text-slate-400 mt-1">High-intent construction signals, ADU filings, and major renovations.</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <button id="exportBtn" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium rounded-lg border border-slate-700 transition">
+                    Export JSON / CSV
+                </button>
+            </div>
+        </div>
+
+        <!-- Metric KPI Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
+            <div class="bg-[#121826] border border-slate-800/80 p-5 rounded-xl">
+                <div class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Total Signals</div>
+                <div id="metric-total" class="text-2xl font-bold text-white tracking-tight">--</div>
+                <div class="text-xs text-slate-500 mt-1">Past 14 days</div>
+            </div>
+            <div class="bg-[#121826] border border-slate-800/80 p-5 rounded-xl">
+                <div class="text-xs uppercase tracking-wider font-semibold text-emerald-400 mb-1">High Priority (ADU & Remodels)</div>
+                <div id="metric-priority" class="text-2xl font-bold text-emerald-400 tracking-tight">--</div>
+                <div class="text-xs text-slate-500 mt-1">Ready for outreach</div>
+            </div>
+            <div class="bg-[#121826] border border-slate-800/80 p-5 rounded-xl">
+                <div class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">General Construction</div>
+                <div id="metric-general" class="text-2xl font-bold text-slate-300 tracking-tight">--</div>
+                <div class="text-xs text-slate-500 mt-1">Solar, re-roofs, combos</div>
+            </div>
+        </div>
+
+        <!-- Filter Controls Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800">
+            <!-- Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2" id="filter-pills">
+                <button data-filter="all" class="filter-pill active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500 text-black transition">
+                    All Signals
+                </button>
+                <button data-filter="priority" class="filter-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+                    High Priority Only
+                </button>
+                <button data-filter="adu" class="filter-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+                    ADU Builds
+                </button>
+                <button data-filter="remodel" class="filter-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+                    Remodels / Flips
+                </button>
+            </div>
+
+            <!-- Search Field -->
+            <div class="relative w-full sm:w-64">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Filter address or keyword..." 
+                    class="w-full bg-[#121826] border border-slate-800 rounded-lg px-3.5 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"
+                >
+            </div>
+        </div>
+
+        <!-- Feed List View -->
+        <div class="mt-4 flex flex-col gap-2.5" id="leads-container">
+            <!-- Injected dynamically via JavaScript -->
+        </div>
+
+    </main>
+
+    <script>
+        let allLeads = [];
+        let currentFilter = 'all';
+        let searchQuery = '';
+
+        // Load data from leads.json
+        fetch('leads.json')
+            .then(res => res.json())
+            .then(data => {
+                allLeads = data;
+                updateMetrics(data);
+                renderLeads();
+            })
+            .catch(err => {
+                console.error("Could not load leads.json:", err);
+                document.getElementById('leads-container').innerHTML = `
+                    <div class="p-8 text-center text-sm text-slate-500 bg-[#121826] rounded-xl border border-slate-800">
+                        Unable to load leads.json. Confirm the file exists in the root directory.
+                    </div>
+                `;
+            });
+
+        function updateMetrics(leads) {
+            const total = leads.length;
+            const priorityCount = leads.filter(l => l.action !== 'General Construction').length;
+            const generalCount = total - priorityCount;
+
+            document.getElementById('metric-total').textContent = total;
+            document.getElementById('metric-priority').textContent = priorityCount;
+            document.getElementById('metric-general').textContent = generalCount;
+        }
+
+        function getActionBadge(action) {
+            if (action.includes('ADU')) {
+                return `<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">ADU Prospect</span>`;
+            }
+            if (action.includes('Remodel') || action.includes('Flipper')) {
+                return `<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Major Remodel</span>`;
+            }
+            if (action.includes('Prospect') || action.includes('Commercial')) {
+                return `<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">Commercial</span>`;
+            }
+            return `<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-slate-800 text-slate-400 border border-slate-700/50">General</span>`;
+        }
+
+        function renderLeads() {
+            const container = document.getElementById('leads-container');
+            container.innerHTML = '';
+
+            const filtered = allLeads.filter(lead => {
+                // Category Filter
+                let matchesCategory = true;
+                if (currentFilter === 'priority') {
+                    matchesCategory = lead.action !== 'General Construction';
+                } else if (currentFilter === 'adu') {
+                    matchesCategory = lead.action.includes('ADU');
+                } else if (currentFilter === 'remodel') {
+                    matchesCategory = lead.action.includes('Remodel') || lead.action.includes('Flipper');
+                }
+
+                // Text Search Query
+                const query = searchQuery.toLowerCase();
+                const matchesSearch = lead.address.toLowerCase().includes(query) || 
+                                      lead.event.toLowerCase().includes(query) || 
+                                      lead.description.toLowerCase().includes(query) ||
+                                      lead.id.toLowerCase().includes(query);
+
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="py-12 text-center text-xs text-slate-500">
+                        No permits match the selected criteria.
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach((lead, index) => {
+                const card = document.createElement('div');
+                card.className = "bg-[#121826] hover:bg-[#151c2d] border border-slate-800/80 hover:border-slate-700/80 rounded-xl p-4 transition cursor-pointer";
+                
+                card.innerHTML = `
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div class="flex items-start sm:items-center gap-3">
+                            <div class="mt-0.5 sm:mt-0 font-mono text-[11px] text-slate-500 shrink-0 w-24">
+                                ${lead.id || 'N/A'}
+                            </div>
+                            <div>
+                                <div class="text-sm font-semibold text-slate-100 flex items-center gap-2">
+                                    ${lead.address}
+                                </div>
+                                <div class="text-xs text-slate-400 mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+                                    <span class="text-slate-300 font-medium">${lead.event}</span>
+                                    <span class="text-slate-600">•</span>
+                                    <span>${lead.date}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 self-end sm:self-center shrink-0">
+                            ${getActionBadge(lead.action)}
+                            <span class="text-[11px] text-slate-500 font-medium hidden md:inline-block">${lead.status}</span>
+                        </div>
+                    </div>
+
+                    <!-- Expandable Description Row -->
+                    <div class="mt-3 pt-3 border-t border-slate-800/50 text-xs text-slate-400 leading-relaxed flex justify-between items-center">
+                        <span class="truncate max-w-2xl">${lead.description}</span>
+                        <a 
+                            href="https://aca-prod.accela.com/COHB/Cap/CapDetail.aspx?altId=${encodeURIComponent(lead.id)}" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="text-emerald-400 hover:text-emerald-300 font-medium text-[11px] ml-4 shrink-0 inline-flex items-center gap-1"
+                            onclick="event.stopPropagation();"
+                        >
+                            Accela Link &rarr;
+                        </a>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // Setup filter pill interactions
+        const pills = document.querySelectorAll('.filter-pill');
+        pills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pills.forEach(p => {
+                    p.classList.remove('bg-emerald-500', 'text-black', 'font-semibold');
+                    p.classList.add('bg-slate-800', 'text-slate-300', 'font-medium');
+                });
+                pill.classList.remove('bg-slate-800', 'text-slate-300', 'font-medium');
+                pill.classList.add('bg-emerald-500', 'text-black', 'font-semibold');
+
+                currentFilter = pill.getAttribute('data-filter');
+                renderLeads();
+            });
+        });
+
+        // Search bar listener
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderLeads();
+        });
+
+        // Simple CSV Export helper
+        document.getElementById('exportBtn').addEventListener('click', () => {
+            if (!allLeads.length) return;
+            const headers = ["ID", "Date", "Address", "Event", "Description", "Status", "Action"];
+            const rows = allLeads.map(l => [
+                `"${l.id}"`, `"${l.date}"`, `"${l.address}"`, `"${l.event}"`, 
+                `"${l.description.replace(/"/g, '""')}"`, `"${l.status}"`, `"${l.action}"`
+            ]);
+            const csvContent = "data:text/csv;charset=utf-8," + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", `hb_permits_${new Date().toISOString().slice(0,10)}.csv`);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
