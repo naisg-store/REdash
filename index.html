@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropPulse Intelligence | Permit Radar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0b0f17] text-slate-200 font-sans min-h-screen flex antialiased selection:bg-emerald-500 selection:text-white">
+
+    <aside class="w-64 bg-[#0e131f] border-r border-slate-800/80 p-6 flex flex-col justify-between shrink-0 hidden md:flex">
+        <div>
+            <div class="flex items-center gap-2 mb-10">
+                <div class="h-6 w-6 rounded bg-emerald-500 flex items-center justify-center font-bold text-black text-xs">P</div>
+                <h1 class="text-lg font-semibold tracking-tight text-white">Prop<span class="text-emerald-400">Pulse</span></h1>
+            </div>
+            <nav class="space-y-1 text-sm font-medium">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg bg-emerald-500/10 text-emerald-400">Permit Radar</a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition">Distressed Assets</a>
+            </nav>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 text-xs text-slate-500 flex items-center justify-between">
+            <span>HB Accela Feed</span>
+            <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+            </span>
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col p-6 lg:p-10 max-w-7xl mx-auto w-full overflow-y-auto">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+            <div>
+                <h2 class="text-2xl font-bold tracking-tight text-white">Huntington Beach Permits</h2>
+                <p class="text-sm text-slate-400 mt-1">High-intent construction signals, ADU filings, and major renovations.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800">
+            <div class="flex flex-wrap items-center gap-2" id="filter-pills">
+                <button data-filter="all" class="filter-pill active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500 text-black transition">All Signals</button>
+                <button data-filter="priority" class="filter-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition">High Priority Only</button>
+            </div>
+
+            <div class="flex gap-3 w-full sm:w-auto">
+                <select id="geo-filter" class="bg-[#121826] border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-emerald-500/50">
+                    <option value="all">All HB Neighborhoods</option>
+                    <option value="92648">Downtown / Pier (92648)</option>
+                    <option value="92649">Huntington Harbour (92649)</option>
+                    <option value="92646">South HB (92646)</option>
+                    <option value="92647">Goldenwest (92647)</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Search address..." class="w-full sm:w-48 bg-[#121826] border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none">
+            </div>
+        </div>
+
+        <div class="mt-4 flex flex-col gap-2.5" id="leads-container"></div>
+    </main>
+
+    <script>
+        let allLeads = [];
+        let currentFilter = 'all';
+        let currentGeo = 'all';
+        let searchQuery = '';
+
+        const priorityMap = { "ADU Investor Lead": 1, "Major Remodel / Flipper": 2, "Re-development Prospect": 3, "General Construction": 4 };
+
+        fetch('leads.json')
+            .then(res => res.json())
+            .then(data => {
+                data.sort((a, b) => {
+                    const priorityA = priorityMap[a.action] || 5;
+                    const priorityB = priorityMap[b.action] || 5;
+                    if (priorityA !== priorityB) return priorityA - priorityB;
+                    return new Date(b.date) - new Date(a.date);
+                });
+                allLeads = data;
+                renderLeads();
+            })
+            .catch(err => console.error(err));
+
+        function toggleDrawer(id) {
+            const drawer = document.getElementById(`drawer-${id}`);
+            drawer.classList.toggle('hidden');
+        }
+
+        function getActionBadge(action) {
+            if (action.includes('ADU')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">ADU Prospect</span>`;
+            if (action.includes('Remodel')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Major Remodel</span>`;
+            return `<span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-800 text-slate-400 border border-slate-700/50">General</span>`;
+        }
+
+        function renderLeads() {
+            const container = document.getElementById('leads-container');
+            container.innerHTML = '';
+
+            const filtered = allLeads.filter(lead => {
+                let matchesCategory = currentFilter === 'priority' ? lead.action !== 'General Construction' : true;
+                let matchesGeo = currentGeo === 'all' ? true : lead.zip === currentGeo;
+                const query = searchQuery.toLowerCase();
+                const matchesSearch = lead.address.toLowerCase().includes(query) || lead.description.toLowerCase().includes(query);
+                return matchesCategory && matchesGeo && matchesSearch;
+            });
+
+            filtered.forEach((lead, index) => {
+                const card = document.createElement('div');
+                card.className = "bg-[#121826] border border-slate-800/80 rounded-xl p-4 transition";
+                
+                // Safe ID for HTML element
+                const safeId = lead.id.replace(/[^a-zA-Z0-9]/g, '');
+
+                const mailerTemplate = `Hi Owner, saw you recently pulled a permit for a ${lead.event} at ${lead.address}. If you need any contractor references or want a quick post-renovation home valuation, let me know!`;
+
+                card.innerHTML = `
+                    <div class="flex justify-between gap-3 cursor-pointer" onclick="toggleDrawer('${safeId}')">
+                        <div class="flex gap-3">
+                            <div>
+                                <div class="text-sm font-semibold text-slate-100 flex items-center gap-2">
+                                    ${lead.address}
+                                </div>
+                                <div class="text-xs text-slate-400 mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+                                    <span class="text-slate-300 font-medium">${lead.event}</span>
+                                    <span class="text-slate-600">•</span>
+                                    <span>${lead.date}</span>
+                                    <span class="text-slate-600">•</span>
+                                    <span class="text-[10px] uppercase tracking-wider text-purple-400">${lead.scope || 'N/A'}</span>
+                                    <span class="text-[10px] uppercase tracking-wider text-blue-400 ml-1">${lead.contractor || 'N/A'}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 shrink-0">
+                            ${getActionBadge(lead.action)}
+                            <button class="text-slate-500 hover:text-white transition">↓</button>
+                        </div>
+                    </div>
+
+                    <div id="drawer-${safeId}" class="hidden mt-4 pt-4 border-t border-slate-800/50">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-[10px] uppercase text-slate-500 font-semibold mb-1">Permit Description</div>
+                                <div class="text-xs text-slate-300 leading-relaxed">${lead.description}</div>
+                                <a href="https://aca-prod.accela.com/COHB/Cap/CapDetail.aspx?altId=${encodeURIComponent(lead.id)}" target="_blank" class="mt-2 text-emerald-400 hover:text-emerald-300 font-medium text-[11px] inline-flex items-center gap-1">
+                                    Open Accela Record &rarr;
+                                </a>
+                            </div>
+                            <div class="bg-[#0b0f17] p-3 rounded-lg border border-slate-800">
+                                <div class="text-[10px] uppercase text-slate-500 font-semibold mb-1 flex justify-between">
+                                    <span>Outreach Script</span>
+                                    <button onclick="navigator.clipboard.writeText('${mailerTemplate.replace(/'/g, "\\'")}')" class="text-emerald-500 hover:text-emerald-400">Copy</button>
+                                </div>
+                                <div class="text-[11px] text-slate-400 leading-relaxed font-mono">${mailerTemplate}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        document.querySelectorAll('.filter-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                document.querySelectorAll('.filter-pill').forEach(p => {
+                    p.classList.remove('bg-emerald-500', 'text-black', 'font-semibold');
+                    p.classList.add('bg-slate-800', 'text-slate-300', 'font-medium');
+                });
+                pill.classList.remove('bg-slate-800', 'text-slate-300', 'font-medium');
+                pill.classList.add('bg-emerald-500', 'text-black', 'font-semibold');
+                currentFilter = pill.getAttribute('data-filter');
+                renderLeads();
+            });
+        });
+
+        document.getElementById('geo-filter').addEventListener('change', (e) => {
+            currentGeo = e.target.value;
+            renderLeads();
+        });
+
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderLeads();
+        });
+    </script>
+</body>
+</html>
