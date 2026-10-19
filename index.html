@@ -65,7 +65,7 @@
                     <option value="92646">South HB (92646)</option>
                     <option value="92647">Goldenwest (92647)</option>
                 </select>
-                <input type="text" id="search-input" placeholder="Search address..." class="w-full sm:w-48 bg-[#121826] border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none">
+                <input type="text" id="search-input" placeholder="Search address or keyword..." class="w-full sm:w-48 bg-[#121826] border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none">
             </div>
         </div>
 
@@ -78,9 +78,15 @@
         let currentGeo = 'all';
         let searchQuery = '';
 
-        const priorityMap = { "ADU Investor Lead": 1, "Major Remodel / Flipper": 2, "Re-development Prospect": 3, "General Construction": 4 };
+        const priorityMap = { 
+            "ADU Investor Lead": 1, 
+            "Major Remodel / Flipper": 2, 
+            "Re-development Prospect": 3, 
+            "General Construction": 4 
+        };
 
-        fetch('leads.json')
+        // Cache-busting parameter (?t=) ensures fresh data on every load
+        fetch('leads.json?t=' + new Date().getTime())
             .then(res => res.json())
             .then(data => {
                 data.sort((a, b) => {
@@ -92,25 +98,26 @@
                 allLeads = data;
                 renderLeads();
             })
-            .catch(err => console.error(err));
+            .catch(err => console.error("Error loading leads.json:", err));
 
         function toggleDrawer(id) {
             const drawer = document.getElementById(`drawer-${id}`);
-            drawer.classList.toggle('hidden');
+            if (drawer) {
+                drawer.classList.toggle('hidden');
+            }
         }
 
         function getActionBadge(action) {
             if (action.includes('ADU')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">ADU Prospect</span>`;
             if (action.includes('Remodel')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Major Remodel</span>`;
+            if (action.includes('Prospect')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">Commercial</span>`;
             return `<span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-800 text-slate-400 border border-slate-700/50">General</span>`;
         }
 
-        // Macro to convert ***text*** into bold styled HTML tags
+        // Macro: Converts ***clerk text*** into prominent green tags
         function formatDescription(desc) {
             if (!desc) return '';
-            // Finds text wrapped in 2 or more asterisks and makes it bold and emerald
-            let formatted = desc.replace(/\*{2,}([^*]+)\*{2,}/g, '<strong class="text-emerald-400 font-bold uppercase tracking-wider">$1</strong>');
-            // Removes any leftover unmatched asterisks so it stays clean
+            let formatted = desc.replace(/\*{2,}([^*]+)\*{2,}/g, '<strong class="text-emerald-400 font-bold tracking-wide uppercase px-1 py-0.5 bg-emerald-950/60 rounded border border-emerald-500/20">$1</strong>');
             return formatted.replace(/\*{2,}/g, '').trim();
         }
 
@@ -122,20 +129,30 @@
                 let matchesCategory = currentFilter === 'priority' ? lead.action !== 'General Construction' : true;
                 let matchesGeo = currentGeo === 'all' ? true : lead.zip === currentGeo;
                 const query = searchQuery.toLowerCase();
-                const matchesSearch = lead.address.toLowerCase().includes(query) || lead.description.toLowerCase().includes(query);
+                const matchesSearch = (lead.address || '').toLowerCase().includes(query) || 
+                                      (lead.description || '').toLowerCase().includes(query) ||
+                                      (lead.id || '').toLowerCase().includes(query);
                 return matchesCategory && matchesGeo && matchesSearch;
             });
 
-            filtered.forEach((lead, index) => {
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="py-12 text-center text-xs text-slate-500">No permits match the selected criteria.</div>`;
+                return;
+            }
+
+            filtered.forEach(lead => {
                 const card = document.createElement('div');
                 card.className = "bg-[#121826] border border-slate-800/80 rounded-xl p-4 transition";
                 
-                const safeId = lead.id.replace(/[^a-zA-Z0-9]/g, '');
-                const mailerTemplate = `Hi Owner, saw you recently pulled a permit for a ${lead.event} at ${lead.address}. If you need any contractor references or want a quick post-renovation home valuation, let me know!`;
+                const safeId = (lead.id || Math.random().toString()).replace(/[^a-zA-Z0-9]/g, '');
+                const mailerTemplate = `Hi Owner, saw you recently pulled a permit for ${lead.event} at ${lead.address}. If you need contractor references or want a quick post-renovation home valuation, let me know!`;
 
                 card.innerHTML = `
                     <div class="flex justify-between gap-3 cursor-pointer" onclick="toggleDrawer('${safeId}')">
                         <div class="flex gap-3">
+                            <div class="mt-0.5 sm:mt-0 font-mono text-[11px] text-slate-500 shrink-0 w-24">
+                                ${lead.date}
+                            </div>
                             <div>
                                 <div class="text-sm font-semibold text-slate-100 flex items-center gap-2">
                                     ${lead.address}
@@ -143,10 +160,10 @@
                                 <div class="text-xs text-slate-400 mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1">
                                     <span class="text-slate-300 font-medium">${lead.event}</span>
                                     <span class="text-slate-600">•</span>
-                                    <span>${lead.date}</span>
+                                    <span class="font-mono text-slate-400">${lead.id}</span>
                                     <span class="text-slate-600">•</span>
-                                    <span class="text-[10px] uppercase tracking-wider text-purple-400">${lead.scope || 'N/A'}</span>
-                                    <span class="text-[10px] uppercase tracking-wider text-blue-400 ml-1">${lead.contractor || 'N/A'}</span>
+                                    <span class="text-[10px] uppercase tracking-wider text-purple-400 font-medium">${lead.scope || 'N/A'}</span>
+                                    <span class="text-[10px] uppercase tracking-wider text-blue-400 font-medium ml-1">${lead.contractor || 'N/A'}</span>
                                 </div>
                             </div>
                         </div>
@@ -161,14 +178,14 @@
                             <div>
                                 <div class="text-[10px] uppercase text-slate-500 font-semibold mb-1">Permit Description</div>
                                 <div class="text-xs text-slate-300 leading-relaxed">${formatDescription(lead.description)}</div>
-                                <a href="${lead.link || 'https://aca-prod.accela.com/COHB/Cap/CapHome.aspx?module=Building'}" target="_blank" class="mt-2 text-emerald-400 hover:text-emerald-300 font-medium text-[11px] inline-flex items-center gap-1">
-                                    Open Accela Record &rarr;
-                                </a>
+                                <button onclick="navigator.clipboard.writeText('${lead.id}'); window.open('https://aca-prod.accela.com/COHB/Cap/CapHome.aspx?module=Building&TabName=Home', '_blank');" class="mt-3 px-3 py-1.5 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 border border-emerald-500/20 rounded font-medium text-[11px] inline-flex items-center gap-1 transition">
+                                    Copy ID & Open Portal &rarr;
+                                </button>
                             </div>
                             <div class="bg-[#0b0f17] p-3 rounded-lg border border-slate-800">
                                 <div class="text-[10px] uppercase text-slate-500 font-semibold mb-1 flex justify-between">
                                     <span>Outreach Script</span>
-                                    <button onclick="navigator.clipboard.writeText('${mailerTemplate.replace(/'/g, "\\'")}')" class="text-emerald-500 hover:text-emerald-400">Copy</button>
+                                    <button onclick="navigator.clipboard.writeText('${mailerTemplate.replace(/'/g, "\\'")}')" class="text-emerald-500 hover:text-emerald-400 text-xs font-semibold">Copy</button>
                                 </div>
                                 <div class="text-[11px] text-slate-400 leading-relaxed font-mono">${mailerTemplate}</div>
                             </div>
