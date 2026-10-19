@@ -127,10 +127,31 @@
         let currentFilter = 'all';
         let searchQuery = '';
 
+// Define priority weights (lower number = higher priority)
+        const priorityMap = {
+            "ADU Investor Lead": 1,
+            "Major Remodel / Flipper": 2,
+            "Re-development Prospect": 3,
+            "General Construction": 4
+        };
+
         // Load data from leads.json
         fetch('leads.json')
             .then(res => res.json())
             .then(data => {
+                // Multi-level sort: Priority first, then newest Date
+                data.sort((a, b) => {
+                    const priorityA = priorityMap[a.action] || 5;
+                    const priorityB = priorityMap[b.action] || 5;
+                    
+                    if (priorityA !== priorityB) {
+                        return priorityA - priorityB; // Sorts priority mathematically
+                    }
+                    
+                    // If priorities match, sort by date (newest first)
+                    return new Date(b.date) - new Date(a.date);[cite: 3]
+                });
+
                 allLeads = data;
                 updateMetrics(data);
                 renderLeads();
