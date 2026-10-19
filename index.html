@@ -116,13 +116,6 @@
             return formatted.replace(/\*/g, '').trim();
         }
 
-        // Macro: Converts ***clerk text*** into prominent green tags
-        function formatDescription(desc) {
-            if (!desc) return '';
-            let formatted = desc.replace(/\*{2,}([^*]+)\*{2,}/g, '<strong class="text-emerald-400 font-bold tracking-wide uppercase px-1 py-0.5 bg-emerald-950/60 rounded border border-emerald-500/20">$1</strong>');
-            return formatted.replace(/\*{2,}/g, '').trim();
-        }
-
         function renderLeads() {
             const container = document.getElementById('leads-container');
             container.innerHTML = '';
