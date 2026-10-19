@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Description injected via script variables during deployment -->
+    <meta name="description" content="{{SEO_DESCRIPTION}}">
+    <title>PropPulse Intelligence | Off-Market Radar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans h-screen flex overflow-hidden">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="w-64 bg-gray-900 border-r border-gray-800 p-6 flex flex-col">
+        <h1 class="text-xl font-bold text-white tracking-wider mb-8">Prop<span class="text-emerald-500">Pulse</span></h1>
+        <nav class="flex-1 space-y-4">
+            <a href="#" class="block text-emerald-400 font-medium">Distressed Radar</a>
+            <a href="#" class="block text-gray-400 hover:text-gray-200 transition">Permit Tracker</a>
+            <a href="#" class="block text-gray-400 hover:text-gray-200 transition">Market Content</a>
+        </nav>
+        <div class="mt-auto pt-6 border-t border-gray-800">
+            <p class="text-xs text-gray-500">Data Pipeline: <span class="text-emerald-500 font-medium">Optimal</span></p>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col p-8 overflow-y-auto">
+        
+        <!-- Key Metrics Header -->
+        <div class="grid grid-cols-3 gap-6 mb-8">
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg shadow-sm">
+                <h3 class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">New Distress Signals</h3>
+                <p class="text-3xl font-bold text-white">12</p>
+                <p class="text-xs text-emerald-500 mt-2">+3 in the last 24 hours</p>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg shadow-sm">
+                <h3 class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Major Permits Pulled</h3>
+                <p class="text-3xl font-bold text-white">4</p>
+                <p class="text-xs text-gray-500 mt-2">Past 7 days</p>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg shadow-sm">
+                <h3 class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Database Status</h3>
+                <p class="text-3xl font-bold text-emerald-400">Synced</p>
+                <p class="text-xs text-gray-500 mt-2">Last fetch: 10 mins ago</p>
+            </div>
+        </div>
+
+        <!-- Data Grid Layout -->
+        <div class="grid grid-cols-3 gap-6 flex-1">
+            
+            <!-- Actionable Leads Table -->
+            <div class="col-span-2 bg-gray-900 border border-gray-800 rounded-lg shadow-sm flex flex-col">
+                <div class="p-4 border-b border-gray-800 flex justify-between items-center">
+                    <h2 class="text-lg font-semibold text-white">Actionable Properties</h2>
+                    <button class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm rounded transition">Export CSV</button>
+                </div>
+                <div class="overflow-y-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-950 text-gray-400 text-xs uppercase tracking-wider border-b border-gray-800">
+                                <th class="p-4 font-medium">Target Address</th>
+                                <th class="p-4 font-medium">Trigger Event</th>
+                                <th class="p-4 font-medium">Owner Status</th>
+                                <th class="p-4 font-medium">Next Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leads-table-body" class="text-sm">
+                            <!-- Populated dynamically via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pipeline Ingestion Terminal -->
+            <div class="bg-black border border-gray-800 rounded-lg shadow-sm flex flex-col p-4 font-mono text-xs">
+                <h2 class="text-gray-400 font-semibold mb-4 uppercase tracking-wider">Live Ingestion Feed</h2>
+                <div id="terminal-feed" class="flex-1 overflow-y-auto space-y-2 text-gray-500 leading-relaxed">
+                    <!-- Logs injected via JS -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // MOCK API PAYLOAD - Ready to be replaced by a fetch() call to your Cloudflare Worker
+        const mockLeads = [
+            { address: '14421 Beach Blvd', event: 'Code Violation (Exterior)', status: 'Absentee', action: 'Generate Mailer' },
+            { address: '9082 Atlanta Ave', event: 'Notice of Default', status: 'Owner Occupied', action: 'Skip Trace' },
+            { address: '21004 Pacific Coast Hwy', event: 'Major Remodel Permit', status: 'LLC Owned', action: 'Call Agent' }
+        ];
+
+        // Hydrate the DOM table
+        const tbody = document.getElementById('leads-table-body');
+        mockLeads.forEach(lead => {
+            const tr = document.createElement('tr');
+            tr.className = 'border-b border-gray-800 hover:bg-gray-800/50 transition';
+            tr.innerHTML = `
+                <td class="p-4 text-gray-200 font-medium">${lead.address}</td>
+                <td class="p-4 text-orange-400">${lead.event}</td>
+                <td class="p-4 text-gray-400">${lead.status}</td>
+                <td class="p-4"><button class="text-emerald-500 hover:text-emerald-400 underline decoration-emerald-500/30 transition">${lead.action}</button></td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        // Simulate n8n/Python terminal logs for visual feedback
+        const terminalLogs = [
+            "[CRON] Initiating county public records scrape...",
+            "[N8N] Connected to webhook endpoint successfully.",
+            "[API] Fetched 45 new permits from municipal portal.",
+            "[PYTHON] Filtering for 'Major Remodel' > $50k...",
+            "[DB] Found 3 new matches. Inserting records.",
+            "[SYNC] Pushing updated JSON to frontend..."
+        ];
+
+        const terminalFeed = document.getElementById('terminal-feed');
+        let logIndex = 0;
+        
+        setInterval(() => {
+            if(logIndex < terminalLogs.length) {
+                const p = document.createElement('p');
+                p.textContent = `> ${terminalLogs[logIndex]}`;
+                if (terminalLogs[logIndex].includes('Found')) p.className = 'text-emerald-500';
+                if (terminalLogs[logIndex].includes('Filtering')) p.className = 'text-orange-400';
+                terminalFeed.appendChild(p);
+                terminalFeed.scrollTop = terminalFeed.scrollHeight;
+                logIndex++;
+            }
+        }, 1200);
+    </script>
+</body>
+</html>
