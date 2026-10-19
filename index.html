@@ -121,9 +121,7 @@
                 const card = document.createElement('div');
                 card.className = "bg-[#121826] border border-slate-800/80 rounded-xl p-4 transition";
                 
-                // Safe ID for HTML element
                 const safeId = lead.id.replace(/[^a-zA-Z0-9]/g, '');
-
                 const mailerTemplate = `Hi Owner, saw you recently pulled a permit for a ${lead.event} at ${lead.address}. If you need any contractor references or want a quick post-renovation home valuation, let me know!`;
 
                 card.innerHTML = `
@@ -154,7 +152,7 @@
                             <div>
                                 <div class="text-[10px] uppercase text-slate-500 font-semibold mb-1">Permit Description</div>
                                 <div class="text-xs text-slate-300 leading-relaxed">${lead.description}</div>
-                                <a href="https://aca-prod.accela.com/COHB/Cap/CapDetail.aspx?altId=${encodeURIComponent(lead.id)}" target="_blank" class="mt-2 text-emerald-400 hover:text-emerald-300 font-medium text-[11px] inline-flex items-center gap-1">
+                                <a href="${lead.link || 'https://aca-prod.accela.com/COHB/Cap/CapHome.aspx?module=Building'}" target="_blank" class="mt-2 text-emerald-400 hover:text-emerald-300 font-medium text-[11px] inline-flex items-center gap-1">
                                     Open Accela Record &rarr;
                                 </a>
                             </div>
