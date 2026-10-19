@@ -177,13 +177,17 @@
 
                     <div id="drawer-${safeId}" class="hidden mt-4 pt-4 border-t border-slate-800/50">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                         
+                            
                             <div>
                                 <div class="text-[10px] uppercase text-slate-500 font-semibold mb-1">Permit Description</div>
                                 <div class="text-xs text-slate-300 leading-relaxed">${formatDescription(lead.description)}</div>
-                                <button onclick="navigator.clipboard.writeText('${lead.id}'); window.open('https://aca-prod.accela.com/COHB/Cap/CapHome.aspx?module=Building&TabName=Home', '_blank');" class="mt-3 px-3 py-1.5 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 border border-emerald-500/20 rounded font-medium text-[11px] inline-flex items-center gap-1 transition">
+                                <button title="Paste the code into the Permit Number input and click Search to find the listing on the Accela site" onclick="navigator.clipboard.writeText('${lead.id}'); window.open('https://aca-prod.accela.com/COHB/Cap/CapHome.aspx?module=Building&TabName=Home', '_blank');" class="mt-3 px-3 py-1.5 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 border border-emerald-500/20 rounded font-medium text-[11px] inline-flex items-center gap-1 transition">
                                     Copy ID & Open Portal &rarr;
                                 </button>
                             </div>
+
+                            
                             <div class="bg-[#0b0f17] p-3 rounded-lg border border-slate-800">
                                 <div class="text-[10px] uppercase text-slate-500 font-semibold mb-1 flex justify-between">
                                     <span>Outreach Script</span>
