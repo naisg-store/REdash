@@ -107,11 +107,13 @@
             }
         }
 
-        function getActionBadge(action) {
-            if (action.includes('ADU')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">ADU Prospect</span>`;
-            if (action.includes('Remodel')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Major Remodel</span>`;
-            if (action.includes('Prospect')) return `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">Commercial</span>`;
-            return `<span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-800 text-slate-400 border border-slate-700/50">General</span>`;
+// Macro: Converts ***clerk text*** into prominent green tags (handles unclosed stars)
+        function formatDescription(desc) {
+            if (!desc) return '';
+            // Matches 2+ asterisks, captures text, and stops at the next asterisks OR the end of the string
+            let formatted = desc.replace(/\*{2,}([^*]+)(?:\*{2,}|$)/g, '<strong class="text-emerald-400 font-bold tracking-wide uppercase px-1 py-0.5 bg-emerald-950/60 rounded border border-emerald-500/20 mx-1">$1</strong>');
+            // Clean up any leftover single rogue asterisks
+            return formatted.replace(/\*/g, '').trim();
         }
 
         // Macro: Converts ***clerk text*** into prominent green tags
