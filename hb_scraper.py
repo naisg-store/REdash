@@ -14,7 +14,9 @@ def scrape_hb_permits():
     leads = []
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=100)
+        # Automatically detects if running on GitHub Actions and switches to headless mode
+        is_ci = os.getenv("CI") == "true"
+        browser = p.chromium.launch(headless=is_ci, slow_mo=100 if not is_ci else 0)
         page = browser.new_page()
         
         try:
