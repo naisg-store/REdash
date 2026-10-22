@@ -238,7 +238,7 @@
         "Category": "Permit",
         "Record_Number": "FR2026-0222",
         "Applied_Date": "10/16/2026",
-        "Status": "Plan Check Approved",
+        "Status": "Issued",
         "Address": "427 IRVINE AVE NEWPORT BEACH CA 92663",
         "Description": "SFR (N) FIRE SPRINKLER SYSTEM W/ (45) HEADS. (XR2025-3284)"
     },
@@ -438,7 +438,7 @@
         "Applied_Date": "10/21/2026",
         "Status": "Issued",
         "Address": "123 EDGEWATER AVE E Unit: A NEWPORT BEACH CA 92661",
-        "Description": "MECH - INSTALL (1) GROUND MOUNTED CONDENSER, (2) FLOOR HEATERS, AND (3) AIR HANDLERS ***TIMERS REQUIRED***"
+        "Description": "MECH - INSTALL (1) GROUND MOUNTED CONDENSER, (2) WALL HEATERS, AND (3) AIR HANDLERS ***TIMERS REQUIRED***"
     },
     {
         "City": "Newport Beach",
@@ -506,6 +506,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "MT2026-0153",
+        "Applied_Date": "10/22/2026",
+        "Status": "Applied",
+        "Address": "J-0098 CA",
+        "Description": ""
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "N2026-0404",
         "Applied_Date": "10/15/2026",
         "Status": "Issued",
@@ -565,6 +574,15 @@
         "Status": "Applied",
         "Address": "3456 VIA OPORTO NEWPORT BEACH CA 92663",
         "Description": "Per conversation With Josh McDonald we are to file an encroachment permit for the Dewatering and Demo equipment for the Newport elks project to take the additional space required."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "N2026-0411",
+        "Applied_Date": "10/22/2026",
+        "Status": "Issued",
+        "Address": "501 ORCHID AVE NEWPORT BEACH CA 92625",
+        "Description": "REMOVAL OF DECORATIVE CONCRETE WITHIN PARKWAY ON ORCHID AVE AND SECOND AVE FRONTAGES. (FRONT UNIT ONLY)"
     },
     {
         "City": "Newport Beach",
@@ -958,7 +976,7 @@
         "Category": "Permit",
         "Record_Number": "PI2026-1271",
         "Applied_Date": "10/21/2026",
-        "Status": "Applied",
+        "Status": "Approved",
         "Address": "427 IRVINE AVE NEWPORT BEACH CA 92663",
         "Description": "SFR (N) FIRE SPRINKLER SYSTEM W/ (45) HEADS. (XR2025-3284)"
     },
@@ -1185,7 +1203,7 @@
         "Applied_Date": "10/15/2026",
         "Status": "Applied",
         "Address": "1529 DOLPHIN TER NEWPORT BEACH CA 92625",
-        "Description": "REV 1 - DELTA 1 -MODIFICATION OF UPPER LEVEL DECK SLAB THICKNESS. CHANGE FROM SOLDIER PILE CAISSONS TO CAGE CAISSONS."
+        "Description": "REV 1 - DELTA 1 - (REVISION) MODIFICATION OF UPPER LEVEL DECK SLAB THICKNESS. CHANGE FROM SOLDIER PILE CAISSONS TO CAGE CAISSONS AND DRILLED CAISSONS. (ADD SCOPE) NEW POOL PLATFORM W/ 20 CAISSONS, TEMP SHORING W/ PIPE AND BOARD 4' MAX SHORING HEIGHT"
     },
     {
         "City": "Newport Beach",
@@ -1631,6 +1649,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "REV2026-1940",
+        "Applied_Date": "10/22/2026",
+        "Status": "Applied",
+        "Address": "2647 COAST HWY E NEWPORT BEACH CA 92625",
+        "Description": "COMM TI \"SHERMAN LIBRARY AND GARDENS\" REMODEL VISITOR CENTER 932 SF, ADD BELL TOWER ENTRY FEATURE 307 SF, COMMUNITY KITCHEN MAINTENANCE & ADA UPGRADES"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "RW2026-0024",
         "Applied_Date": "10/19/2026",
         "Status": "Issued",
@@ -1948,7 +1975,7 @@
         "Category": "Permit",
         "Record_Number": "SEBRSS2026-0252",
         "Applied_Date": "10/20/2026",
-        "Status": "Applied",
+        "Status": "Denied",
         "Address": "3300 NEWPORT BLVD NEWPORT BEACH CA 92663",
         "Description": ""
     },
@@ -2815,6 +2842,42 @@
         "Status": "Issued",
         "Address": "106 29TH ST Unit: A NEWPORT BEACH CA 92663",
         "Description": "re-roof 20 square on existing flat roof on main duplex unit A&B and install new poly fresko torch and poly glass spell stick underlayment crrc#06160011a"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2799",
+        "Applied_Date": "10/22/2026",
+        "Status": "Applied",
+        "Address": "2900 PARK NEWPORT DR Unit: 234 NEWPORT BEACH CA 92660",
+        "Description": "MFR (BLDG 4) UNIT 234, MODEL 2A CATALINA 1 ELITE STANDARD - REMODEL 989 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2800",
+        "Applied_Date": "10/22/2026",
+        "Status": "Issued",
+        "Address": "29 CURL DR NEWPORT BEACH CA 92625",
+        "Description": "SFR SOLAR REROOF: REMOVE (E) TILE, R/R SHEATHING AS NEEDED, INSTL UNDERLAYMENT, INSTL COMP SHINGLES FOR SOLAR, RELAY (E) TILE 9SQ"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2801",
+        "Applied_Date": "10/22/2026",
+        "Status": "Applied",
+        "Address": "2030 PORT WEYBRIDGE PL NEWPORT BEACH CA 92660",
+        "Description": "NEW TWO-STORY 3,478 SF SINGLE-FAMILY RESIDENCE INCLUDING A 344 SF JADU, ATTACHED 440 SF TWO-CAR GARAGE, AND ASSOCIATED SITE IMPROVEMENTS."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2802",
+        "Applied_Date": "10/22/2026",
+        "Status": "Applied",
+        "Address": "5132 RESIDENCIA NEWPORT BEACH CA 92660",
+        "Description": "MFR - R/R DRYWALL DUE TO WATER DAMAGE 235 SF"
     },
     {
         "City": "Newport Beach",
