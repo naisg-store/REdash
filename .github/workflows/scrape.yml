@@ -30,10 +30,11 @@ jobs:
       - name: Run Newport Beach Scraper
         run: python nb_scraper.py
 
-      - name: Commit and push if leads.json changed
+      - name: Commit and push if leads changed
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add leads.json nb_leads.json
-          git commit -m "Auto-update daily leads.json [skip ci]" || echo "No changes to commit"
+          git commit -m "Auto-update daily leads [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
