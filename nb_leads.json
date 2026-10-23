@@ -2980,6 +2980,24 @@
     },
     {
         "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2813",
+        "Applied_Date": "10/22/2026",
+        "Status": "Issued",
+        "Address": "202 AGATE AVE NEWPORT BEACH CA 92662",
+        "Description": "SFR - T/O EXISTING SHINGLE ROOF (24 SQ). INSTALL NEW ROOF SHEATHING. APPLY SYNTHETIC UNDERLAYMENT. INSTALL 24 SQ COOL ROOF COMPOSITION SHINGLES"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2814",
+        "Applied_Date": "10/22/2026",
+        "Status": "Issued",
+        "Address": "800 BALBOA AVE NEWPORT BEACH CA 92662",
+        "Description": "SFR - T/O EXISTING SHINGLE ROOF (20 SQ). INSTALL NEW ROOF SHEATHING. APPLY SYNTHETIC UNDERLAYMENT. INSTALL 17 SQ COOL ROOF COMPOSITION SHINGLES & 3 SQ TORCH-APPLIED ROLL ROOFING."
+    },
+    {
+        "City": "Newport Beach",
         "Category": "Plan",
         "Record_Number": "PA2026-0214",
         "Applied_Date": "",
