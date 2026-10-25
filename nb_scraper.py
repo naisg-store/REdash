@@ -5,9 +5,10 @@ from datetime import datetime, timedelta
 
 async def scrape_newport():
     async with async_playwright() as p:
-        # Set back to False for local watching. Change to True for GitHub later.
         browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
+        # 1. Force full desktop viewport so EnerGov renders the full layout
+        context = await browser.new_context(viewport={"width": 1920, "height": 1080})
+        page = await context.new_page()
 
         all_leads = []
         categories = ["Permit", "Plan"]
@@ -16,28 +17,33 @@ async def scrape_newport():
         for category in categories:
             print(f"\n--- Starting category: {category} ---")
             
-            # 1. Fresh navigation per category to clear Angular state
+            # Fresh navigation per category to ensure clean Angular state
             await page.goto("https://css.newportbeachca.gov/EnerGov_Prod/SelfService#/search")
             await page.wait_for_load_state("networkidle")
-            await page.wait_for_timeout(2000)
+            await page.wait_for_timeout(3000)
 
             # 2. Select Category
             dropdown = page.locator("#SearchModule")
-            await dropdown.wait_for(state="visible", timeout=15000)
+            await dropdown.wait_for(state="visible", timeout=20000)
             await dropdown.select_option(label=category)
             await page.wait_for_timeout(2000)
 
             # 3. Open Advanced Search
-            advanced_btn = page.get_by_text("Advanced", exact=False)
+            # Target the button or link specifically and force click if needed
+            advanced_btn = page.locator("a:has-text('Advanced'), button:has-text('Advanced')").first
+            await advanced_btn.wait_for(state="visible", timeout=15000)
             await advanced_btn.click()
-            await page.wait_for_timeout(1500)
+            await page.wait_for_timeout(2000)
 
-            # 4. Fill Applied Date
-            await page.locator("#ApplyDateFrom").fill(start_date)
+            # 4. Fill Applied Date (matches either #ApplyDateFrom or #PermitCriteria_ApplyDateFrom)
+            date_input = page.locator("#ApplyDateFrom, input[id*='ApplyDateFrom']").first
+            await date_input.wait_for(state="visible", timeout=20000)
+            await date_input.fill(start_date)
             await page.wait_for_timeout(1000)
 
             # 5. Execute Search
-            await page.get_by_role("button", name="Search").click()
+            search_btn = page.locator("button:has-text('Search'), input[value='Search']").first
+            await search_btn.click()
 
             # Wait for pagination dropdown and adjust to 100 per page
             page_size = page.locator("#pageSizeList")
@@ -57,7 +63,7 @@ async def scrape_newport():
                 print(f"Scraping {category} - page {page_num}...")
 
                 try:
-                    await page.locator('div[id^="entityRecordDiv"]').first.wait_for(state="visible", timeout=15000)
+                    await page.locator('div[id^="entityRecordDiv"]').first.wait_for(state="visible", timeout=20000)
                 except Exception:
                     print(f"No more records rendered on page {page_num}.")
                     break
@@ -83,7 +89,7 @@ async def scrape_newport():
                         }
                         all_leads.append(lead)
 
-                # Pagination: Locate Next Page link
+                # Pagination: Check next link
                 next_btn = page.locator("#link-NextPage")
                 if await next_btn.count() == 0 or not await next_btn.is_visible():
                     print(f"Reached final page for {category}.")
