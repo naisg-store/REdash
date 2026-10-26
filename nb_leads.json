@@ -2,15 +2,6 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "DH2026-0389",
-        "Applied_Date": "10/18/2026",
-        "Status": "Applied",
-        "Address": "2024 DIANA LN NEWPORT BEACH CA 92660",
-        "Description": "NEW SFR WITH ATTACHED GARAGE 4758/689 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
         "Record_Number": "DH2026-0390",
         "Applied_Date": "10/19/2026",
         "Status": "Applied",
@@ -259,15 +250,6 @@
         "Status": "Plan Check Applied",
         "Address": "124 VILLA POINT DR NEWPORT BEACH CA 92660",
         "Description": "MFR FIRE SPRINKLER SYSTEM, 65 HEADS"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "FR2026-0223",
-        "Applied_Date": "10/18/2026",
-        "Status": "Plan Check Applied",
-        "Address": "1223 GOLDENROD AVE NEWPORT BEACH CA 92625",
-        "Description": "SFR (N) FIRE SPRINKLER SYSTEM W/ (60) HEADS. (XR2025-1753)"
     },
     {
         "City": "Newport Beach",
@@ -958,7 +940,7 @@
         "Category": "Permit",
         "Record_Number": "PI2026-1273",
         "Applied_Date": "10/21/2026",
-        "Status": "Applied",
+        "Status": "Approved",
         "Address": "922 OCEAN FRONT E Unit: 1 NEWPORT BEACH CA 92661",
         "Description": "DUPLEX FIRE SPRINKLER SYSTEM 64 HEADS AND SYSTEM RISER (XR2024-0255)"
     },
@@ -1703,6 +1685,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "REV2026-1960",
+        "Applied_Date": "10/25/2026",
+        "Status": "Applied",
+        "Address": "2507 SALT AIR CIR NEWPORT BEACH CA 92625",
+        "Description": "Add 4x12 on top of the existing top plate attached with SDS screws to achieve the proposed height without having to demo the exterior walls"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "RW2026-0024",
         "Applied_Date": "10/19/2026",
         "Status": "Issued",
@@ -1831,7 +1822,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1771",
         "Applied_Date": "10/19/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "1 PUBLIC ROW NB NEWPORT BEACH CA",
         "Description": "Newport Beach Boardriders Surf Event (SERSS2026-0135)"
     },
@@ -2540,24 +2531,6 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "XR2026-2769",
-        "Applied_Date": "10/18/2026",
-        "Status": "Issued",
-        "Address": "114 36TH ST NEWPORT BEACH CA 92663",
-        "Description": "Re roof tear off 18 squares metal roof 040 aluminum stone, white color"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "XR2026-2770",
-        "Applied_Date": "10/18/2026",
-        "Status": "Applied",
-        "Address": "1615 PORT CHARLES PL NEWPORT BEACH CA 92660",
-        "Description": "Remove Kitchen wall and remodel Kitchen. Remove existing stairs and construct new stairs. Remodel second floor and remodel with addition. Remove existing roof and construct new roof"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
         "Record_Number": "XR2026-2771",
         "Applied_Date": "10/19/2026",
         "Status": "Issued",
@@ -3088,6 +3061,42 @@
     },
     {
         "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2830",
+        "Applied_Date": "10/25/2026",
+        "Status": "Applied",
+        "Address": "1975 SHERINGTON PL Unit: H 209 NEWPORT BEACH CA 92663",
+        "Description": "MFR - INTERIOR ALTERATION 659 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2831",
+        "Applied_Date": "10/25/2026",
+        "Status": "Applied",
+        "Address": "1815 SHERINGTON PL Unit: V 206 NEWPORT BEACH CA 92663",
+        "Description": "MFR - INTERIOR ALTERATION 665 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2832",
+        "Applied_Date": "10/25/2026",
+        "Status": "Applied",
+        "Address": "2120 16TH ST Unit: R 206 NEWPORT BEACH CA 92663",
+        "Description": "MFR - INTERIOR ALTERATION 406 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2833",
+        "Applied_Date": "10/26/2026",
+        "Status": "Applied",
+        "Address": "20071 CYPRESS ST NEWPORT BEACH CA 92660",
+        "Description": "Construction of a new 1200 SF accessory recreational building with office space located at the rear of the property."
+    },
+    {
+        "City": "Newport Beach",
         "Category": "Plan",
         "Record_Number": "PA2026-0216",
         "Applied_Date": "",
@@ -3125,19 +3134,19 @@
     {
         "City": "Newport Beach",
         "Category": "Plan",
-        "Record_Number": "PA2026-0218",
-        "Applied_Date": "",
-        "Status": "Pending",
-        "Address": "335 WALNUT ST NEWPORT BEACH CA 92663",
-        "Description": "Certificate of Compliance application and attachments"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Plan",
         "Record_Number": "PA2026-0219",
         "Applied_Date": "",
         "Status": "Void",
         "Address": "335 WALNUT ST NEWPORT BEACH CA 92663",
         "Description": "adding additional attachment to my previous Certificate of Compliance application"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Plan",
+        "Record_Number": "PA2026-0218",
+        "Applied_Date": "",
+        "Status": "Applied",
+        "Address": "335 WALNUT ST NEWPORT BEACH CA 92663",
+        "Description": "Certificate of Compliance application and attachments"
     }
 ]
