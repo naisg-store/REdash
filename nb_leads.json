@@ -605,15 +605,6 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "ML2026-0027",
-        "Applied_Date": "10/24/2026",
-        "Status": "Applied",
-        "Address": "",
-        "Description": ""
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
         "Record_Number": "MT2026-0155",
         "Applied_Date": "10/26/2026",
         "Status": "Applied",
@@ -1811,15 +1802,6 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "RW2026-0026",
-        "Applied_Date": "10/24/2026",
-        "Status": "Issued",
-        "Address": "RHINE WHARF CA",
-        "Description": "Ultra Pacific will use the Rhine Wharf 10/24/26 12:00pm to 1:00pm to load ice & supplies then use the wharf again on 10/26/26 7:00am to 8am to offload fish."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
         "Record_Number": "RW2026-0027",
         "Applied_Date": "10/29/2026",
         "Status": "Cancelled",
@@ -2002,7 +1984,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1815",
         "Applied_Date": "10/27/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "1107 JAMBOREE RD NEWPORT BEACH CA 92660",
         "Description": "150' BUS/TRUCK PARKING FOR HYATT REGENCY SUMMER CONCERT SERIES."
     },
@@ -2635,15 +2617,6 @@
         "Status": "Applied",
         "Address": "2614 SAN MIGUEL DR NEWPORT BEACH CA 92660",
         "Description": "COMM TI \"SPEC SUITE\" 2342 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "XR2026-2829",
-        "Applied_Date": "10/24/2026",
-        "Status": "Applied",
-        "Address": "1518 ANITA LN NEWPORT BEACH CA 92660",
-        "Description": "1. 900 S.F INTERIOR REMODEL: RECONFIGURE EXISTING KITCHEN, ENCLOSE FAMILY ROOM, CONVERT BEDROOM 1 TO A SMALL OFFICE AND LAUNDRY ROOM, AND CHANGE UPSTAIRS KITCHEN TO A BEDROOM. 2. REMOVE SLIDER AND DOOR IN LIVING ROOM AND CONVERT TO ONE LARGE SLIDING POCKET DOOR. 3. REMOVE 3 SLIDERS AND REPLACE WITH WINDOWS ON THE FIRST FLOOR. 4. REMOVE 1 SLIDER AND REPLACE WITH FRENCH DOOR ON THE FIRST FLOOR. 5. REMOVE ONE EXTERIOR FRENCH DOOR ON THE FIRST FLOOR AND CHANGE TO A WINDOW. 6. OMIT 4 WINDOWS ON THE SECOND FLOOR. 7. REMOVE AND REPLACE ALL OTHER EXISTING WINDOWS 'LIKE-FOR-LIKE'. 8. REPLACE 2 GARAGE MAN-DOORS, SWITCH SWING ON THE DOOR INTO THE HOME."
     },
     {
         "City": "Newport Beach",
