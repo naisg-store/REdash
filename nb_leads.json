@@ -2,42 +2,6 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "DH2026-0398",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "2915 PEBBLE DR NEWPORT BEACH CA 92625",
-        "Description": "DEMO SFR 3313 SF (4 BEDROOMS) SEWER CAP INCLUDED"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "DH2026-0399",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "2915 PEBBLE DR NEWPORT BEACH CA 92625",
-        "Description": "DEMO DETACHED GARAGE, INCLUDES SEWER CAP"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "DH2026-0400",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "2751 BAY SHORE DR NEWPORT BEACH CA 92663",
-        "Description": "SFR - INTERIOR REMODEL 1080 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "DH2026-0401",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "531 SEAWARD RD NEWPORT BEACH CA 92625",
-        "Description": "NEW SFR/GARAGE - 5112 SF/430 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
         "Record_Number": "DH2026-0402",
         "Applied_Date": "10/30/2026",
         "Status": "Applied",
@@ -101,11 +65,29 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "E2026-0868",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "1935 PORT CHELSEA PL NEWPORT BEACH CA 92660",
-        "Description": "ELEC CHANGE OUT 200 AMP POWER"
+        "Record_Number": "DH2026-0409",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "888 SAN CLEMENTE DR Unit: 300 NEWPORT BEACH CA 92660",
+        "Description": "COMM TI \"UBS\" 3526 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "DH2026-0410",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "4695 MACARTHUR CT Unit: 200 NEWPORT BEACH CA 92660",
+        "Description": "COMM TI \"FARMERS & MERCHANT BANK\" PHASE 2 (12,363 SF)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "DH2026-0411",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "10 BEACON BAY NEWPORT BEACH CA 92660",
+        "Description": "SFR ADD 37 SF LIVING AREA IN GARAGE, NEW COVERED PATIO 420 SF, INTERIOR REMODEL 156 SF AND REPLACEMENT WINDOWS /FRENCH DOORS, DRAINAGE"
     },
     {
         "City": "Newport Beach",
@@ -308,20 +290,20 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "FC2026-0161",
-        "Applied_Date": "10/29/2026",
+        "Record_Number": "E2026-0891",
+        "Applied_Date": "11/05/2026",
         "Status": "Issued",
-        "Address": "100 BAYVIEW CIR NEWPORT BEACH CA 92660",
-        "Description": "COMM FIRE ALARM TI W/ (3) DEVICES. (XC2026-0390)"
+        "Address": "816 VIA LIDO NORD NEWPORT BEACH CA 92663",
+        "Description": "TPP"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
         "Record_Number": "FC2026-0162",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Plan Check Applied",
         "Address": "200 18TH ST NEWPORT BEACH CA 92663",
-        "Description": "THE INTENT OF THIS SUBMITTAL IS TO SHOW THE REPLACEMENT OF THE EXISTING FIRE ALARM SYSTEM FOR THIS BUILDING & TO CONNECT TO THE EXISTING NOTIFICATION DEVICES."
+        "Description": "COMM FIRE ALARM SYSTEM 30 DEVICES"
     },
     {
         "City": "Newport Beach",
@@ -335,29 +317,20 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "FC2026-0164",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "230 LILLE LN Unit: 101 NEWPORT BEACH CA 92663",
+        "Description": "MFR FIRE ALARM - REPLACE COMM LINE W/CELLULAR COMMUNICATOR 1 DEVICE"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "FM2026-0009",
         "Applied_Date": "11/04/2026",
         "Status": "Plan Check Applied",
         "Address": "4000 MACARTHUR BLVD NEWPORT BEACH CA 92660",
         "Description": "COMM METHOD B INTERFACE"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "FR2026-0228",
-        "Applied_Date": "10/29/2026",
-        "Status": "Plan Check Approved",
-        "Address": "8 SURFSPRAY BLUFF NEWPORT BEACH CA 92657",
-        "Description": "SFR FIRE SPRINKLER ALT - ADD (2) HEADS TO (E) SYSTEM. (XR2025-3177)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "FR2026-0229",
-        "Applied_Date": "10/29/2026",
-        "Status": "Plan Check Approved",
-        "Address": "345 EVENING CANYON RD NEWPORT BEACH CA 92625",
-        "Description": "SFR (N) FIRE SPRINKLER SYSTEM W/ (20) HEADS. (XR2025-2867)"
     },
     {
         "City": "Newport Beach",
@@ -385,69 +358,6 @@
         "Status": "Applied",
         "Address": "500 EVENING STAR LN NEWPORT BEACH CA 92660",
         "Description": "SFR (N) FIRE SPRINKLER SYSTEM W/ (27) HEADS & (1) RISER. (XR2026-1055)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "H2026-0646",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "900 SANDCASTLE DR NEWPORT BEACH CA 92625",
-        "Description": "MECH INSTALL (2) HEAT PUMPS AT SIDE **TAMPER RESISTANT CAPS REQUIRED & TIMERS PROHIBITED** (XR2024-6903)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "H2026-0647",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "1710 PLAZA DEL NORTE NEWPORT BEACH CA 92661",
-        "Description": "MECH - INSTALL (1) HEAT PUMP ON ROOF DECK ****TIMERS PROHIBITED ON HEAT PUMPS****"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "H2026-0648",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "4908 SEASHORE DR Unit: A NEWPORT BEACH CA 92663",
-        "Description": "MECH INSTALL (2) ROOF TOP HEAT PUMPS **TAMPER RESISTANT CAPS REQUIRED & TIMERS PROHIBITED** (XR2025-2340)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "H2026-0649",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "3025 CORTE HERMOSA NEWPORT BEACH CA 92660",
-        "Description": "MECH - INSTALL (1) GROUND MOUNTED AC UNIT, (1) FURNACE, AND RELATED DUCTS ***TIMERS REQUIRED****"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "H2026-0650",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "203 CEDAR ST Unit: B NEWPORT BEACH CA 92663",
-        "Description": "MECH CHANGE OUT GROUND MOUNTED HEAT PUMP & FURNACE *TAMPER PROOF CAP REQ*"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "H2026-0651",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "1101 NOTTINGHAM RD NEWPORT BEACH CA 92660",
-        "Description": "Change out one (1) existing 60,000 BTU furnace located in the closet."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "H2026-0652",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "309 ENCINA NEWPORT BEACH CA 92660",
-        "Description": "MECH C/O HEAT PUMP **TAMPER RESISTANT CAPS REQUIRED & TIMERS PROHIBITED** (XR2026-2148)"
     },
     {
         "City": "Newport Beach",
@@ -596,11 +506,47 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "HE2026-0086",
-        "Applied_Date": "10/29/2026",
+        "Record_Number": "H2026-0669",
+        "Applied_Date": "11/05/2026",
         "Status": "Issued",
-        "Address": "FIVE POINTS RACING AREA CA",
-        "Description": "High School Regatta"
+        "Address": "124 VIA QUITO NEWPORT BEACH CA 92663",
+        "Description": "MECH - INSTL GROUND MOUNTED HEAT PUMPS (2). TAMPER RESISTANT CAP REQUIRED"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "H2026-0670",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "1706 PORT ABBEY PL NEWPORT BEACH CA 92660",
+        "Description": "MECH - INSTL GROUND MOUNTED HEAT PUMP, AIR HANDLER, & AC DISCONNECT. TAMPER RESISTANT CAP REQUIRED"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "H2026-0671",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "3221 BROAD ST NEWPORT BEACH CA 92663",
+        "Description": "Change out one (1) existing 80,000 BTU furnace located in the attic."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "HAIC2026-0009",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "503 36TH ST NEWPORT BEACH CA 92663",
+        "Description": "R/R FLOATING DOCK, GANGWAY AND TWO 12\" PILES."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "HAIC2026-0010",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1207 BAY FRONT N NEWPORT BEACH CA 92662",
+        "Description": "R/R U-SHAPED DOCK SYSTEM WITH NEW CONFIGURATION."
     },
     {
         "City": "Newport Beach",
@@ -659,6 +605,24 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "M2026-0064",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "112 BAY FRONT S NEWPORT BEACH CA 92662",
+        "Description": "R/R (1) (E) CRACKED PILE"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "M2026-0065",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "1903 BAY AVE E NEWPORT BEACH CA 92661",
+        "Description": "REDUCE (E) 8' WIDE DOCK TO 6' WIDE"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "MT2026-0161",
         "Applied_Date": "11/04/2026",
         "Status": "Applied",
@@ -670,27 +634,9 @@
         "Category": "Permit",
         "Record_Number": "MT2026-0162",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Issued",
         "Address": "J-0410 CA",
         "Description": "J-0410 mooring transfer"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "N2026-0432",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "2400 MARGARET DR NEWPORT BEACH CA 92663",
-        "Description": "INSTALL NEW CONDUIT AND HANDHOLE FOR NEW SERVICE."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "N2026-0433",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "500 NEWPORT CENTER DR NEWPORT BEACH CA 92660",
-        "Description": "INSTALL 30 LF OF 2\" CONDUIT FROM EXISTING MCI VAULT IN PARKWAY."
     },
     {
         "City": "Newport Beach",
@@ -821,29 +767,11 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "NB2026-0128",
-        "Applied_Date": "10/29/2026",
-        "Status": "Declined",
-        "Address": "1 CITYWIDE PROJECT NEWPORT BEACH CA 92660",
-        "Description": "Renewal of existing certification"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "P2026-1405",
-        "Applied_Date": "10/29/2026",
+        "Record_Number": "N2026-0448",
+        "Applied_Date": "11/05/2026",
         "Status": "Issued",
-        "Address": "2114 VISTA ENTRADA NEWPORT BEACH CA 92660",
-        "Description": "Replace existing water heater with new tankless unit in garage of property."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "P2026-1406",
-        "Applied_Date": "10/29/2026",
-        "Status": "Void",
-        "Address": "20 CHATHAM CT NEWPORT BEACH CA 92660",
-        "Description": "Reroute 3/4\" plumbing line due to slab leak."
+        "Address": "2421 BUCKEYE ST NEWPORT BEACH CA 92660",
+        "Description": "INSTALL (1) CURB DRAIN (XR2025-0382)"
     },
     {
         "City": "Newport Beach",
@@ -938,65 +866,11 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "PI2026-1312",
-        "Applied_Date": "10/29/2026",
-        "Status": "Approved",
-        "Address": "2044 OCEAN BLVD NEWPORT BEACH CA 92661",
-        "Description": "SFR - INSTALL 29 (N) FIRE SPRINKLER HEADS (XR2026-0687)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "PI2026-1313",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "2751 BAY SHORE DR NEWPORT BEACH CA 92663",
-        "Description": "SFR - INTERIOR REMODEL 1080 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "PI2026-1314",
-        "Applied_Date": "10/29/2026",
-        "Status": "Void",
-        "Address": "2751 BAY SHORE DR NEWPORT BEACH CA 92663",
-        "Description": "SFR - INTERIOR REMODEL 1080 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "PI2026-1315",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "3840 COAST HWY E Unit: A NEWPORT BEACH CA 92625",
-        "Description": "COMMERCIAL TI SPEC SUITE 2432 SF (MERGE TWO SUITES, SHELL FOR RESTAURANT)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "PI2026-1316",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "531 SEAWARD RD NEWPORT BEACH CA 92625",
-        "Description": "NEW SFR/GARAGE - 5112 SF/430 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "PI2026-1317",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "14 GENEVE NEWPORT BEACH CA 92660",
-        "Description": "SFR (N) SOLAR PV SYSTEM 18.72 KW W/ (260) MODULES/TILES. INSTALL ENERGY STORAGE SYSTEM W/ (3) BATTERIES 40.5 KW"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "PI2026-1318",
-        "Applied_Date": "10/29/2026",
-        "Status": "Approved",
-        "Address": "1 HALF MOON BAY DR NEWPORT BEACH CA 92625",
-        "Description": "NEW SFR W/ BASEMENT AND ATTACHED GARAGE 8654 SF & 728 SF"
+        "Record_Number": "P2026-1417",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "314 HELIOTROPE AVE NEWPORT BEACH CA 92625",
+        "Description": "PLUMB C/O WATER HEATER, SAME LOCATION"
     },
     {
         "City": "Newport Beach",
@@ -1066,7 +940,7 @@
         "Category": "Permit",
         "Record_Number": "PI2026-1326",
         "Applied_Date": "11/02/2026",
-        "Status": "Applied",
+        "Status": "Approved",
         "Address": "122 29TH ST NEWPORT BEACH CA 92663",
         "Description": "DUPLEX PV SOLAR SYSTEM 3.44 KW, 8 MODULES"
     },
@@ -1129,7 +1003,7 @@
         "Category": "Permit",
         "Record_Number": "PI2026-1333",
         "Applied_Date": "11/03/2026",
-        "Status": "Applied",
+        "Status": "Approved",
         "Address": "126 SAPPHIRE AVE NEWPORT BEACH CA 92662",
         "Description": "NEW SFR W/ ATTACHED GARAGE & JADU 2313 SF/ 402 SF"
     },
@@ -1228,7 +1102,7 @@
         "Category": "Permit",
         "Record_Number": "PI2026-1344",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Approved",
         "Address": "439 HARBOR ISLAND DR NEWPORT BEACH CA 92660",
         "Description": "SFR - CMU WALL 3 LF X 1'10\" (WITHIN 3' OF THE P/L)"
     },
@@ -1246,7 +1120,7 @@
         "Category": "Permit",
         "Record_Number": "PI2026-1346",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Approved",
         "Address": "1705 SHERINGTON PL Unit: X 108 NEWPORT BEACH CA 92663",
         "Description": "MFR - R/R APPROX. 15 SQ FT OF DRYWALL AND R19 INSULATION"
     },
@@ -1255,18 +1129,36 @@
         "Category": "Permit",
         "Record_Number": "PI2026-1347",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Approved",
         "Address": "10 BEACON BAY NEWPORT BEACH CA 92660",
         "Description": "SFR ADD 37 SF LIVING AREA IN GARAGE, NEW COVERED PATIO 420 SF, INTERIOR REMODEL 156 SF AND REPLACEMENT WINDOWS /FRENCH DOORS, DRAINAGE"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "PV2026-0318",
-        "Applied_Date": "10/29/2026",
-        "Status": "Plan Check Applied",
-        "Address": "205 VIA KORON NEWPORT BEACH CA 92663",
-        "Description": "SFR SOLAR PV ENERGY STORAGE SYSTEM 27 KW (2)"
+        "Record_Number": "PI2026-1348",
+        "Applied_Date": "11/05/2026",
+        "Status": "Approved",
+        "Address": "3167 CORTE PORTOFINO NEWPORT BEACH CA 92660",
+        "Description": "SFR (N) POOL 456 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "PI2026-1349",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "888 SAN CLEMENTE DR Unit: 300 NEWPORT BEACH CA 92660",
+        "Description": "COMM TI \"UBS\" 3526 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "PI2026-1350",
+        "Applied_Date": "11/05/2026",
+        "Status": "Approved",
+        "Address": "4000 MACARTHUR BLVD Unit: 2ND FLOOR NEWPORT BEACH CA 92660",
+        "Description": "COMM ELEC ADD RECEPTACLES IN IDF ROOM AND BREAKROOM"
     },
     {
         "City": "Newport Beach",
@@ -1381,81 +1273,9 @@
         "Category": "Permit",
         "Record_Number": "PV2026-0331",
         "Applied_Date": "11/05/2026",
-        "Status": "Applied",
+        "Status": "Issued",
         "Address": "2071 PORT PROVENCE PL NEWPORT BEACH CA 92660",
         "Description": "Installation of a 7.74kw dc system, 18 modules roof mounted, with 1 tesla battery."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2000",
-        "Applied_Date": "10/29/2026",
-        "Status": "Slipsheeted",
-        "Address": "4675 MACARTHUR CT Unit: 650 NEWPORT BEACH CA 92660",
-        "Description": "REV 1 - DELTA 1 REVIISION TO ADD (2) DEVICES."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2001",
-        "Applied_Date": "10/29/2026",
-        "Status": "Slipsheeted",
-        "Address": "4695 MACARTHUR CT Unit: 700 NEWPORT BEACH CA 92660",
-        "Description": "REV 1 -DELTA 1 REVISION TO ADD (2) DEVICES (ADD SMOKE DETECTOR & RELAY FOR COMBO SMOKE/FIRE DAMPER SHUTDOWN)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2002",
-        "Applied_Date": "10/29/2026",
-        "Status": "Slipsheeted",
-        "Address": "306 MORNING CANYON RD NEWPORT BEACH CA 92625",
-        "Description": "REV 1, DELTA 1 - ADD OLIVE TREES"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2003",
-        "Applied_Date": "10/29/2026",
-        "Status": "Slipsheeted",
-        "Address": "120 CORAL AVE NEWPORT BEACH CA 92662",
-        "Description": "REV 4, DELTA 4 - FOUNDATION DETAILS PROVIDED"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2004",
-        "Applied_Date": "10/29/2026",
-        "Status": "Slipsheeted",
-        "Address": "600 RAMONA DR NEWPORT BEACH CA 92625",
-        "Description": "REV 1, DELTA 1 - UPDATE SITE PLAN TO SHOW REVISED POOL SHAPE"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2005",
-        "Applied_Date": "10/29/2026",
-        "Status": "Slipsheeted",
-        "Address": "309 ENCINA NEWPORT BEACH CA 92660",
-        "Description": "REV 2 - DELTA 2 & ADD'L LIGHT FIXTURES, REPLACE SUB-PANEL & A/C"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2006",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "836 VIA LIDO NORD NEWPORT BEACH CA 92663",
-        "Description": "REV 1 - DELTA 1 - REPLACE CMU & STUCCO SITE WALL WITH GLASS GUARDRAIL"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "REV2026-2007",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "48 WHITEWATER DR NEWPORT BEACH CA 92625",
-        "Description": "REV 2 DELTA 2- LEGALIZE UNPERMITTED WORK"
     },
     {
         "City": "Newport Beach",
@@ -1660,7 +1480,7 @@
         "Category": "Permit",
         "Record_Number": "REV2026-2030",
         "Applied_Date": "11/03/2026",
-        "Status": "Applied",
+        "Status": "Slipsheeted",
         "Address": "1721 PALOMA DR NEWPORT BEACH CA 92660",
         "Description": "REV 1 - DELTA 1 REVISION TO ADD (1) SPRINKLER ON SECOND FLOOR."
     },
@@ -1698,7 +1518,7 @@
         "Applied_Date": "11/04/2026",
         "Status": "Applied",
         "Address": "435 GOLDENROD AVE NEWPORT BEACH CA 92625",
-        "Description": "Correcting the Energy Report submitted for Unit A."
+        "Description": "REV 1 DELTA 1- T24 CHANGES"
     },
     {
         "City": "Newport Beach",
@@ -1716,7 +1536,7 @@
         "Applied_Date": "11/04/2026",
         "Status": "Applied",
         "Address": "511 GOLDENROD AVE NEWPORT BEACH CA 92625",
-        "Description": "Structural revision to the framing plan"
+        "Description": "REV1 DELTA 1- STRUCTURAL FRAMING REVISION"
     },
     {
         "City": "Newport Beach",
@@ -1730,20 +1550,47 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "RW2026-0027",
-        "Applied_Date": "10/29/2026",
-        "Status": "Cancelled",
-        "Address": "",
-        "Description": "offloading equipment from our vessel to dockside truck"
+        "Record_Number": "REV2026-2038",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "900 SANDCASTLE DR NEWPORT BEACH CA 92625",
+        "Description": "REV 1 - DELTA 1 REVISION TO RELOCATE RISER. ADD (1) HEAD AT BATH-2. RELOCATE HEADS."
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "RW2026-0028",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "RHINE WHARF CA",
-        "Description": ""
+        "Record_Number": "REV2026-2039",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1743 MIRAMAR DR NEWPORT BEACH CA 92661",
+        "Description": "SOME CHANGES ON STRUCTURAL"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "REV2026-2040",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "4 RUE GRAND DUCAL NEWPORT BEACH CA 92660",
+        "Description": "REV 1 DELTA 1 - REMODEL 91 SF, CHANGE WINDOWS/DOORS, RECONFIGURE FLOORPLAN (XR2026-2937)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "REV2026-2041",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "2021 GALATEA TER NEWPORT BEACH CA 92625",
+        "Description": "Several - listed on explanation letter"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "REV2026-2042",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1 PARK NEWPORT DR NEWPORT BEACH CA 92660",
+        "Description": "Submittal for revised plans to reflect existing conditions revealed in the field and other revisions to clarify instructions. VE and cabinetry coordination revisions at T2 & T2R townhomes"
     },
     {
         "City": "Newport Beach",
@@ -1802,92 +1649,11 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "SC2026-1833",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied (Online)",
-        "Address": "1 PUBLIC ROW NB NEWPORT BEACH CA 92660",
-        "Description": "CLOSURES FOR THE INSTALLATION OF HOLIDAY DECORATIONS ALONG EAST COAST HIGHWAY WITHIN CDM. INSTALLATION AND REMOVAL OF DECOR IN STREETLIGHT POLES 9:00 AM TO 3:00 PM. ALL OTHER DECOR INSTALLATION AND REMOVAL 9:00 PM TO 6:00 AM. SEE PLANS FOR TRAFFIC CONTROL AND NO PARKING SIGN LOCATION. FEES CHARGED UNDER N2026-0000."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1834",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "700 GOLDENROD AVE NEWPORT BEACH CA 92625",
-        "Description": "GAS SERVICE ABANDONMENT. SO CAL GAS BLANKET PERMIT WORK."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1835",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "215 FERNLEAF AVE NEWPORT BEACH CA 92625",
-        "Description": "GAS SERVICE ABANDONMENT. SO CAL GAS BLANKET PERMIT WORK."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1836",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "314 LARKSPUR AVE NEWPORT BEACH CA 92625",
-        "Description": "MOVING TRUCK"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1837",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "330 ONYX AVE NEWPORT BEACH CA 92662",
-        "Description": "POD"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1838",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "224 RUBY AVE NEWPORT BEACH CA 92662",
-        "Description": "MATERIAL DELIVERY"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1839",
-        "Applied_Date": "10/29/2026",
-        "Status": "Final",
-        "Address": "301 NARCISSUS AVE NEWPORT BEACH CA 92625",
-        "Description": "CRANE"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1840",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "304 POPPY AVE NEWPORT BEACH CA 92625",
-        "Description": "DUMPSTER"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1841",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "720 BAY AVE W NEWPORT BEACH CA 92661",
-        "Description": "Anteater Regatta- 8th St Alley"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "SC2026-1842",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "210 GARNET AVE NEWPORT BEACH CA 92662",
-        "Description": "STORAGE POD"
+        "Record_Number": "S2026-0189",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "17 LE MANS NEWPORT BEACH CA 92657",
+        "Description": "SFR- NEW POOL AND SPA (434 SF )"
     },
     {
         "City": "Newport Beach",
@@ -1930,7 +1696,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1848",
         "Applied_Date": "10/30/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "3461 VIA LIDO NEWPORT BEACH CA 92663",
         "Description": "MATERIAL DELIVERY AND CONCRETE POUR"
     },
@@ -2047,7 +1813,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1861",
         "Applied_Date": "11/02/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "519 HAZEL DR NEWPORT BEACH CA 92625",
         "Description": "concrete pour"
     },
@@ -2083,7 +1849,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1865",
         "Applied_Date": "11/02/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "115 MARINE AVE NEWPORT BEACH CA 92662",
         "Description": "MATERIAL DELIVERY"
     },
@@ -2164,7 +1930,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1874",
         "Applied_Date": "11/04/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "301 NARCISSUS AVE NEWPORT BEACH CA 92625",
         "Description": "CONCRETE POUR"
     },
@@ -2182,7 +1948,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1876",
         "Applied_Date": "11/04/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "511 GOLDENROD AVE NEWPORT BEACH CA 92625",
         "Description": "CONCRETE POUR"
     },
@@ -2227,7 +1993,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1881",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied (Online)",
+        "Status": "Issued",
         "Address": "608 ORCHID AVE Unit: 1/2 NEWPORT BEACH CA 92625",
         "Description": "STORAGE POD"
     },
@@ -2236,7 +2002,7 @@
         "Category": "Permit",
         "Record_Number": "SC2026-1882",
         "Applied_Date": "11/04/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "1 PUBLIC ROW NB NEWPORT BEACH CA 92660",
         "Description": "INSTALL SECONDARY CABLE FROM MANHOLE IN THE STREET TO HANDLEHOLE IN THE STREET TO PANEL @ 119 VIA SAN REMO (N2026-0002)"
     },
@@ -2247,7 +2013,7 @@
         "Applied_Date": "11/04/2026",
         "Status": "Issued",
         "Address": "1 PUBLIC ROW NB NEWPORT BEACH CA 92660",
-        "Description": "INSTALL CABLE FROM X BOX TO 415 N STAR (N2026-0002)"
+        "Description": "INSTALL NEW ELECTRICAL CABLE FOR NEW SERVICE AND REMOVING A TEMPORARY ELECTRICAL SERVICE. SCE BLANKET PERMIT WORK."
     },
     {
         "City": "Newport Beach",
@@ -2264,8 +2030,53 @@
         "Record_Number": "SC2026-1885",
         "Applied_Date": "11/04/2026",
         "Status": "Issued",
-        "Address": "1503 BALBOA BLVD E NEWPORT BEACH CA 92661",
+        "Address": "503 BALBOA BLVD E Unit: A NEWPORT BEACH CA 92662",
         "Description": "SERVICE INSTALLATION (N2026-0002)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "SC2026-1886",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1 PUBLIC ROW NB NEWPORT BEACH CA 92660",
+        "Description": "TRAFFIC CONTROL FOR POTHOLING OF EXISTING UTILITIES WITHIN THE CITY OF IRVINE PORTION OF CAMPUS DR."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "SC2026-1887",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "1815 HOLIDAY RD NEWPORT BEACH CA 92660",
+        "Description": "DUMPSTER"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "SC2026-1888",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "708 ORCHID AVE NEWPORT BEACH CA 92625",
+        "Description": "MATERIAL DELIVERY"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "SC2026-1889",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1242 OCEAN FRONT W NEWPORT BEACH CA 92661",
+        "Description": "PARKING FOR FILM PERMIT"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "SC2026-1890",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied (Online)",
+        "Address": "2741 OCEAN BLVD NEWPORT BEACH CA 92625",
+        "Description": "Material Drop Off / Equipment Drop Off for construction on 2741 Ocean Blvd - 24 HR"
     },
     {
         "City": "Newport Beach",
@@ -2351,6 +2162,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "SEFD2026-0209",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "2301 SAN JOAQUIN HILLS RD NEWPORT BEACH CA 92625",
+        "Description": "Canopy only to shade cut Christmas Trees"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "SERSS2026-0143",
         "Applied_Date": "10/30/2026",
         "Status": "In Review",
@@ -2369,38 +2189,11 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "U2026-0859",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "609 MARIGOLD AVE NEWPORT BEACH CA 92625",
-        "Description": "DUPLEX RETAINING WALL 42\" HIGH X 37 LF INSIDE P/L"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "U2026-0860",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "2227 ARALIA ST NEWPORT BEACH CA 92660",
-        "Description": "SFR - SITE DRAINAGE PER CITY STANDARD (REV2026-1998 / S2026-0134)"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "U2026-0861",
-        "Applied_Date": "10/29/2026",
-        "Status": "Plan Check Applied",
-        "Address": "1063 GRANVILLE DR NEWPORT BEACH CA 92660",
-        "Description": "MFR - DECK REPAIRS"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "U2026-0862",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "844 AVOCADO AVE NEWPORT BEACH CA 92660",
-        "Description": "COMM - REMOVE AND REPLACE 1,970 SF OF 6\" ASPHALT - SB MACARTHUR BLVD ENTRANCE TO SHOPPING CENTER"
+        "Record_Number": "SERSS2026-0145",
+        "Applied_Date": "11/05/2026",
+        "Status": "In Review",
+        "Address": "2240 UNIVERSITY DR NEWPORT BEACH CA 92660",
+        "Description": "Chanukah Menorah Parade"
     },
     {
         "City": "Newport Beach",
@@ -2558,20 +2351,74 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "XC2026-0532",
-        "Applied_Date": "10/29/2026",
-        "Status": "Plan Check Applied",
-        "Address": "966 AVOCADO AVE NEWPORT BEACH CA 92660",
-        "Description": "COMM TI 812 SF \"FRAMEBRIDGE\""
+        "Record_Number": "U2026-0883",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1309 BALBOA BLVD E NEWPORT BEACH CA 92661",
+        "Description": "SFR - CMU WALL 180 LF X 5' CENTERED OVER PROPERTY LINE , GAS & ELEC TO FIRE PIT"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "XC2026-0533",
-        "Applied_Date": "10/29/2026",
-        "Status": "Plan Check Applied",
-        "Address": "1 HOAG DR NEWPORT BEACH CA 92663",
-        "Description": "COMM CELL SITE \"T MOBILE\""
+        "Record_Number": "U2026-0884",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "3305 NEWPORT BLVD Unit: A NEWPORT BEACH CA 92663",
+        "Description": "COMM - (1) ILLUMINATED CHANNEL LETTER WALL SIGN \"PUNTA MEDANO CEVISHRIA\""
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "U2026-0885",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "2302 FAIRHILL DR NEWPORT BEACH CA 92660",
+        "Description": "SFR - ADD SCOPE (N) RETAINING WALL 3.5' H X 56' LF W/. 3.5' GUARDRAIL. (REV2026-1695)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "U2026-0886",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "3721 INLET ISLE DR NEWPORT BEACH CA 92625",
+        "Description": "DEMO SFR 2572 SF (4 BEDROOMS)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "U2026-0887",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "3721 INLET ISLE DR NEWPORT BEACH CA 92625",
+        "Description": "DEMO POOL \"METHOD B\""
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "U2026-0888",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1921 SABRINA TER NEWPORT BEACH CA 92625",
+        "Description": "SFR- BIORETENTION PLANTER 50 LF X 8' H AND 50 LF X 6'H"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "U2026-0889",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1921 SABRINA TER NEWPORT BEACH CA 92625",
+        "Description": "SFR- 6' H X 75 LF, INSIDE THE P/L"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "U2026-0890",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "1921 SABRINA TER NEWPORT BEACH CA 92625",
+        "Description": "SFR- 5' H X 23 LF, INSIDE THE P/L"
     },
     {
         "City": "Newport Beach",
@@ -2596,7 +2443,7 @@
         "Category": "Permit",
         "Record_Number": "XC2026-0536",
         "Applied_Date": "11/03/2026",
-        "Status": "Plan Check Applied",
+        "Status": "Void",
         "Address": "1411 BAYSWATER NEWPORT BEACH CA 92660",
         "Description": "COMM **CITY JOB** ARROYO PARK SHADE STRUCTURE RENOVATION"
     },
@@ -2605,18 +2452,18 @@
         "Category": "Permit",
         "Record_Number": "XC2026-0537",
         "Applied_Date": "11/03/2026",
-        "Status": "Plan Check Applied",
+        "Status": "Applied",
         "Address": "1990 FORD RD NEWPORT BEACH CA 92660",
-        "Description": "COMM **CITY JOB** BONITA CANYON SPORTS PARK SHADE STRUCTURE RENOVATION"
+        "Description": "COMM **CITY JOB** BONITA CANYON SPORTS PARK SHADE STRUCTURE RENOVATION (2 SHADE STRUCTURES)"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
         "Record_Number": "XC2026-0538",
         "Applied_Date": "11/03/2026",
-        "Status": "Applied",
-        "Address": "BOLSA PARK CA",
-        "Description": "Bolsa Park Shade Structure Renovation"
+        "Status": "Plan Check Applied",
+        "Address": "401 BOLSA AVE Unit: PARK CA",
+        "Description": "COMM - BOLSA PARK SHADE STUCTURE RENOVATION (1 SHADE STRUCTURE)"
     },
     {
         "City": "Newport Beach",
@@ -2632,9 +2479,9 @@
         "Category": "Permit",
         "Record_Number": "XC2026-0540",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
-        "Address": "4667 MACARTHUR BLVD NEWPORT BEACH CA 92660",
-        "Description": "THE REPLACEMENT OF THE (12) EXISTING VALVE-REGULATED LEAD-ACID BATTERIES IN AN EXISTING BATTERY CABINET WITH (8) NEW ERICSSON 6624 LITHIUM-ION BATTERIES IN THE SAME EXISTING BATTERY CABINET."
+        "Status": "Plan Check Applied",
+        "Address": "4667 MACARTHUR BLVD Unit: (CS) NEWPORT BEACH CA 92660",
+        "Description": "COMM BATTERY REPLACEMENT \"T MOBILE\""
     },
     {
         "City": "Newport Beach",
@@ -2659,72 +2506,54 @@
         "Category": "Permit",
         "Record_Number": "XC2026-0543",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Plan Check Applied",
         "Address": "1891 PORT PROVENCE PL NEWPORT BEACH CA 92660",
-        "Description": "Buffalo Hills Park 1 Shade Structure Renovation"
+        "Description": "COMM **CITY JOB** BUFFALO HILLS PARK SHADE RENOVATION (2 SHADES)"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
         "Record_Number": "XC2026-0544",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Plan Check Applied",
         "Address": "1910 PORT CARNEY PL NEWPORT BEACH CA 92660",
-        "Description": "Buffalo Hills 2 Park Shade Structure Renovation"
+        "Description": "COMM BUFFALO HILLS 2 SHADE STRUCTURE RENOVATION (1 SHADE)"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
         "Record_Number": "XC2026-0545",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Plan Check Applied",
         "Address": "4400 CHANNEL PL NEWPORT BEACH CA 92663",
-        "Description": "Channel Place Park Shade Structure Renovation"
+        "Description": "COMM- **CITY JOB** CHANNEL PLACE PARK SHADE STRUCTURE RENOVATION (1 SHADE STRUCTURE)"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "XR2026-2867",
-        "Applied_Date": "10/29/2026",
-        "Status": "Applied",
-        "Address": "3222 OCEAN BLVD NEWPORT BEACH CA 92625",
-        "Description": "Remove existing timber pergola/trellis structure, leaving existing foundation in place. Construct a new steel pergola structure on existing foundation and modify structural base plate connection."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "XR2026-2868",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "229 19TH ST NEWPORT BEACH CA 92663",
-        "Description": "SFR ALT: EMERGENCY FLOOD REPAIR"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "XR2026-2869",
-        "Applied_Date": "10/29/2026",
+        "Record_Number": "XC2026-0546",
+        "Applied_Date": "11/05/2026",
         "Status": "Plan Check Applied",
-        "Address": "115 JASMINE CREEK DR NEWPORT BEACH CA 92625",
-        "Description": "ATT SFR INTERIOR REMODEL 587 SF AND ADD 326 SF"
+        "Address": "1411 BAYSWATER NEWPORT BEACH CA 92660",
+        "Description": "COMM **CITY JOB** ARROYO PARK SHADE STRUCTURE RENOVATION (2 SHADE STRUCURES)"
     },
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "XR2026-2870",
-        "Applied_Date": "10/29/2026",
-        "Status": "Issued",
-        "Address": "15 FAYENCE NEWPORT BEACH CA 92657",
-        "Description": "SFR KITCHEN REMODEL 200 SF *STANDARD PLAN*"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "XR2026-2871",
-        "Applied_Date": "10/29/2026",
+        "Record_Number": "XC2026-0547",
+        "Applied_Date": "11/05/2026",
         "Status": "Plan Check Applied",
-        "Address": "1119 ESTELLE LN NEWPORT BEACH CA 92660",
-        "Description": "SFR ADD 616 SF LIVEABLE, 392 SF TO GARAGE AND INTERIOR RMODEL 1655 SF"
+        "Address": "4695 MACARTHUR CT Unit: 900 NEWPORT BEACH CA 92660",
+        "Description": "COMM OFFICE TI FOR \"O'HAGAN MEYER\" 1475 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XC2026-0548",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "3999 COAST HWY W NEWPORT BEACH CA 92663",
+        "Description": "COMM - INSTL (N) GAZEBO 392 SF"
     },
     {
         "City": "Newport Beach",
@@ -2776,7 +2605,7 @@
         "Category": "Permit",
         "Record_Number": "XR2026-2878",
         "Applied_Date": "10/30/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "118 RUBY AVE NEWPORT BEACH CA 92662",
         "Description": "Remove existing asphalt shingle roof, install like for like asphalt shingles. Replace sheathing only as needed. 4/12 pitch"
     },
@@ -2875,7 +2704,7 @@
         "Category": "Permit",
         "Record_Number": "XR2026-2889",
         "Applied_Date": "11/02/2026",
-        "Status": "Issued",
+        "Status": "Final",
         "Address": "5416 RESIDENCIA NEWPORT BEACH CA 92660",
         "Description": "MFR R/R EXTERIOR STUCCO 6 SF"
     },
@@ -3172,7 +3001,7 @@
         "Category": "Permit",
         "Record_Number": "XR2026-2922",
         "Applied_Date": "11/04/2026",
-        "Status": "Issued",
+        "Status": "Plan Check Approved",
         "Address": "2833 CASSIA ST NEWPORT BEACH CA 92660",
         "Description": "SFR - 125 SF REMODEL OF UPSTAIRS BATHROOM #2 PER CITY STANDARD"
     },
@@ -3199,9 +3028,9 @@
         "Category": "Permit",
         "Record_Number": "XR2026-2925",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Plan Check Applied",
         "Address": "9 LEESBURY CT NEWPORT BEACH CA 92660",
-        "Description": "Interior Remodel Existing House along new exterior doors and windows. New kitchen and Bathrooms. Main House is mostly interior remodel. We are reducing the house square footage by 124 sq.ft. New swimming pool, hardscape and landscape. We are proposing a NEW 2 Bedroom 998 sq.ft. ADU at the rear of the property."
+        "Description": "SFR INTERIOR REMODEL 5560 SF"
     },
     {
         "City": "Newport Beach",
@@ -3217,9 +3046,108 @@
         "Category": "Permit",
         "Record_Number": "XR2026-2927",
         "Applied_Date": "11/04/2026",
-        "Status": "Applied",
+        "Status": "Plan Check Applied",
         "Address": "317 SANTA ANA AVE NEWPORT BEACH CA 92663",
-        "Description": "New 5826.50 sf single-family residence w/ a 1706 (of the 5826.50) sf basement, 694.75 sf garage, and 250.25 sf deck"
+        "Description": "NEW SFR W/ ATTACHED GARAGE AND BASEMENT 5826 SF & 694 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2928",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "820 VIA LIDO NORD NEWPORT BEACH CA 92663",
+        "Description": "SFR INTERIOR REMODEL 2932 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2929",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "2606 LIGHTHOUSE LN NEWPORT BEACH CA 92625",
+        "Description": "Reroof due to massive leaks"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2930",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "3400 MARCUS AVE NEWPORT BEACH CA 92663",
+        "Description": "Raise Seawall with CMU block no more than 18 inches to prepare for coastal flooding emergency"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2931",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "2830 SEAVIEW AVE NEWPORT BEACH CA 92625",
+        "Description": "ATT SFR REMODEL 2 BATHROOMS ON SECOND STORY, HALL BATH 72 SF MASTER BATH 129 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2932",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "9 LEESBURY CT NEWPORT BEACH CA 92660",
+        "Description": "SFR NEW DETACHED ADU 997 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2933",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "2400 SANTIAGO DR NEWPORT BEACH CA 92660",
+        "Description": "(N) SFR W/ GARAGE ON (E) FOUNDATION, 5981 SF/723 SF (REV2026-1643)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2934",
+        "Applied_Date": "11/05/2026",
+        "Status": "Plan Check Applied",
+        "Address": "1218 PEMBROKE LN NEWPORT BEACH CA 92660",
+        "Description": "SFR INTERIOR REMODEL 436 SF"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2935",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "207 19TH ST NEWPORT BEACH CA 92663",
+        "Description": "MFR - R/R (E) ENTRY STAIRS AND HANDRAILS"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2936",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "213 19TH ST NEWPORT BEACH CA 92663",
+        "Description": "MFR - R/R (E) ENTRY STAIRS AND HANDRAILS"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2937",
+        "Applied_Date": "11/05/2026",
+        "Status": "Applied",
+        "Address": "4 RUE GRAND DUCAL NEWPORT BEACH CA 92660",
+        "Description": "SFR- REMODEL 91 SF, CHANGE WINDOWS/DOORS, RECONFIGURE FLOORPLAN"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2938",
+        "Applied_Date": "11/05/2026",
+        "Status": "Issued",
+        "Address": "1545 OCEAN BLVD NEWPORT BEACH CA 92661",
+        "Description": "TEAR OFF EXISTING ROOF. INSPECT THE ROOF AND REPLACE AS NECESSARY. RE-ROOF WITH SELF-ADHERED SBS MODIFIED BITUMEN."
     },
     {
         "City": "Newport Beach",
@@ -3229,15 +3157,6 @@
         "Status": "Pending",
         "Address": "180 NEWPORT CENTER DR NEWPORT BEACH CA 92660",
         "Description": "Minor Use Permit Beauty & Wellness, Massage, Facial & Sound"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Plan",
-        "Record_Number": "PA2026-0228",
-        "Applied_Date": "",
-        "Status": "Pending",
-        "Address": "359 VIA LIDO SOUD NEWPORT BEACH CA 92663",
-        "Description": "Coastal Development Permit to demolish an existing single-family residence and construct a new two-story single-family residence with an attached two-car garage and a 331 SF junior accessory dwelling unit (JADU) within the residence, located at 359 Via Lido Soud (RM zone). Proposed gross floor area is 3,427 SF (2,645 SF living, 451 SF garage, 331 SF JADU), within the 3,612 SF maximum (1.75 x 2,064 SF buildable area). Project includes 717.9 SF of open volume (310 SF required), a flat roof within the 28-foot height limit above established grade (11.35 NAVD88), finished floor at 12.00 NAVD88 per the coastal hazards report (Skelly Engineering, Oct 20, 2026), mat slab foundation, minor grading and drainage, hardscape, and landscaping. No bulkhead or shoreline protective device is proposed. No deviations from development standards are requested."
     },
     {
         "City": "Newport Beach",
@@ -3271,8 +3190,17 @@
         "Category": "Plan",
         "Record_Number": "PA2026-0231",
         "Applied_Date": "",
-        "Status": "Applied",
+        "Status": "Completed",
         "Address": "200 VIA BARCELONA NEWPORT BEACH CA 92663",
         "Description": "Certificate of Compliance"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Plan",
+        "Record_Number": "PA2026-0228",
+        "Applied_Date": "",
+        "Status": "Applied",
+        "Address": "359 VIA LIDO SOUD NEWPORT BEACH CA 92663",
+        "Description": "Coastal Development Permit to demolish an existing single-family residence and construct a new two-story single-family residence with an attached two-car garage and a 331 SF junior accessory dwelling unit (JADU) within the residence, located at 359 Via Lido Soud (RM zone). Proposed gross floor area is 3,427 SF (2,645 SF living, 451 SF garage, 331 SF JADU), within the 3,612 SF maximum (1.75 x 2,064 SF buildable area). Project includes 717.9 SF of open volume (310 SF required), a flat roof within the 28-foot height limit above established grade (11.35 NAVD88), finished floor at 12.00 NAVD88 per the coastal hazards report (Skelly Engineering, Oct 20, 2026), mat slab foundation, minor grading and drainage, hardscape, and landscaping. No bulkhead or shoreline protective device is proposed. No deviations from development standards are requested."
     }
 ]
