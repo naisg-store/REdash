@@ -1,7 +1,7 @@
 [
   {
-    "id": "26TMP-020102",
-    "date": "11/06/2026",
+    "id": "26TMP-020156",
+    "date": "11/07/2026",
     "address": "Huntington Beach, CA",
     "zip": "Unknown",
     "event": "Residential Electrical",
@@ -12,24 +12,48 @@
     "contractor": "GC Attached"
   },
   {
+    "id": "26TMP-020102",
+    "date": "11/07/2026",
+    "address": "20211 Crown Reef Ln",
+    "zip": "Unknown",
+    "event": "Residential Electrical",
+    "description": "Install customer-supplied Level 2 charger in garage 25\u2019 from panel; existing 200a main panel. Provision and installation of (120\u2019) #6 THHN Wire. Provision and installation of (30\u2019) 1\u201d EMT Conduit. Provision and installation of new tandem breakers to make room for EV charger GFCI breaker. Provision and installation of (1) 50a 2-pole GFCI Breaker. Provision and installation of (1) EV Charger Heady Duty Nema 14-50R Receptacle. Provision to label panel and charger. Provision to test the voltage and verify charging. Provision and installation of any necessary equipment and hardware to complete the above scope of work.",
+    "status": "Permit Issued",
+    "action": "General Construction",
+    "scope": "Heavy Capital",
+    "contractor": "GC Attached"
+  },
+  {
+    "id": "C2026-008410",
+    "date": "11/07/2026",
+    "address": "9412 Lanai Cir",
+    "zip": "Unknown",
+    "event": "Residential Combo",
+    "description": "NEW 435 SF ATTACHED ADU",
+    "status": "Permit Issued",
+    "action": "ADU Investor Lead",
+    "scope": "Heavy Capital",
+    "contractor": "GC Attached"
+  },
+  {
+    "id": "B2026-008409",
+    "date": "11/07/2026",
+    "address": "17102 Pleasant Cir",
+    "zip": "Unknown",
+    "event": "Residential Re-roof",
+    "description": "TEAR OFF EXISTING ROOF; REPLACE SHEATHING AS NEEDED, RE-ROOF W/ NEW CERTAINTEED SOLARIS TL COMP SINGLE (5:12 ROOF SLOPE), 31 SQS, MANUFACTURER'S SPEC SHEET TO BE ON SITE.",
+    "status": "Permit Issued",
+    "action": "General Construction",
+    "scope": "Heavy Capital",
+    "contractor": "GC Attached"
+  },
+  {
     "id": "26TMP-020079",
     "date": "11/06/2026",
     "address": "18462 Edwards St",
     "zip": "Unknown",
     "event": "Commercial and Industrial Mechanical",
     "description": "The existing security gate was installed more than 25 years ago and has been continuously utilized as part of the oil field facility. The gate is required for site security and regulatory compliance, as the facility must be enclosed with perimeter fencing topped with barbed wire. The gate is located approximately 60 feet east of Edwards Street and approximately 100 yards north of the Ellis intersection. The gate measures 18 feet in width and 6 feet in height and is integrated into the facility's barbed-wire security fencing system. For emergency access, the gate is equipped with a Knox key switch approved for use by the Fire Department. The gate is powered by a DoorKing Model 9100 operator and operates on a V-channel rail system with guide rollers and keypad entry. Much of the existing gate and security infrastructure was already in place when operation of the oil wells was transferred from Chevron and has remained in service as part of the facility's ongoing operations and security.",
-    "status": "Permit Issued",
-    "action": "General Construction",
-    "scope": "Micro / Routine",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "26TMP-020091",
-    "date": "11/06/2026",
-    "address": "17102 Pleasant Cir",
-    "zip": "Unknown",
-    "event": "Residential Re-roof",
-    "description": "",
     "status": "Permit Issued",
     "action": "General Construction",
     "scope": "Micro / Routine",
@@ -4737,66 +4761,6 @@
     "status": "Permit Issued",
     "action": "General Construction",
     "scope": "Micro / Routine",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "C2026-008051",
-    "date": "10/24/2026",
-    "address": "17188 Edgewater Ln",
-    "zip": "Unknown",
-    "event": "Residential Combo",
-    "description": "***PLNG*** *** V2026-007617 & V2026-007825*** ***WUI CODE*** ***ADDRESS ASSIGNMENT REQ; SCHOOL FEE REQ*** -(N) 772 SF ATTACHED ADU (71 SF ON 1ST FL, 700 SF ON 2ND FL)***1 BED & 1 BATH***; -ADD 578 SF TO (E) SFD TO CREATE UNKOWN?? RM, (1) LAUNDRY RM & (1) BATH; (N) 125 SF BALCONY ON 2ND FL***MAIN HOME = 0 BED(S) & 1 BATH(S)*** -(TOTAL HABITABLE SPACE ADDED = 1,350 SF)",
-    "status": "Permit Issued",
-    "action": "ADU Investor Lead",
-    "scope": "Mid-Scale",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "C2026-008050",
-    "date": "10/24/2026",
-    "address": "20052 Brookhurst St MF",
-    "zip": "Unknown",
-    "event": "Commercial and Industrial Sign",
-    "description": "***COFO REQ PRIOR TO ISSUANCE FOR SIGN*** INSTALL (1) ILLUMINATED WALL SIGN & (3) FACE CHANGE AT (E) MONUMENT SIGN ***JETSET MODERN PILATES***",
-    "status": "Permit Issued",
-    "action": "General Construction",
-    "scope": "Micro / Routine",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "E2026-008049",
-    "date": "10/24/2026",
-    "address": "6365 Princeville Cir",
-    "zip": "Unknown",
-    "event": "Residential Electrical",
-    "description": "R/R (1) SUB-PANEL - LIKE FOR LIKE",
-    "status": "Permit Issued",
-    "action": "General Construction",
-    "scope": "Micro / Routine",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "B2026-008048",
-    "date": "10/24/2026",
-    "address": "1810 Pine St",
-    "zip": "Unknown",
-    "event": "Residential Re-roof",
-    "description": "TEAR OFF EXISTING ROOF; REPLACE SHEATHING AS NEEDED, RE-ROOF W/ NEW GAF COMP SINGLE (3:12 ROOF SLOPE), 31 SQS, WITH ADDITIONAL BUILDING MATERIAL INCLDS 3 SQS OF BUILDT UP GAF Title 24 Torch Down (CRRC: 0676-0025); TOTAL OF 34 SQS.",
-    "status": "Permit Issued",
-    "action": "Major Remodel / Flipper",
-    "scope": "Heavy Capital",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "M2026-008047",
-    "date": "10/24/2026",
-    "address": "8231 Guilders Dr",
-    "zip": "Unknown",
-    "event": "Residential Mechanical",
-    "description": "(N) 2-TON A/C CONDENSER (SPLIT UNIT) IN SIDE YARD W/ (2) DUCTLESS INDOOR ZONES *** CHEERS 426-A020302720A*** ***30\u201d SETBACK TO PROPERTY LINE REQUIRED FOR A/C UNITS*** (A SEPARATE ELECTRICAL PERMIT IS REQUIRED FOR NEW OR REPLACEMENT OF DISCONNECT SWITCH)",
-    "status": "Permit Issued",
-    "action": "General Construction",
-    "scope": "Heavy Capital",
     "contractor": "GC Attached"
   }
 ]

@@ -2980,6 +2980,15 @@
     },
     {
         "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-2953",
+        "Applied_Date": "11/07/2026",
+        "Status": "Issued",
+        "Address": "42 CROOKED STICK DR NEWPORT BEACH CA 92660",
+        "Description": "WHOLE HOUSE PEX A REPIPE OF 16 FIXTURES"
+    },
+    {
+        "City": "Newport Beach",
         "Category": "Plan",
         "Record_Number": "PA2026-0229",
         "Applied_Date": "",
