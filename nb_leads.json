@@ -263,6 +263,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "E2026-0914",
+        "Applied_Date": "11/14/2026",
+        "Status": "Issued",
+        "Address": "9 CANYON ISLAND DR NEWPORT BEACH CA 92660",
+        "Description": "Upgrading and replacing Existing 100 amp sub panel to new 125 amps sub panel"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "FC2026-0166",
         "Applied_Date": "11/09/2026",
         "Status": "Plan Check Applied",
@@ -2054,15 +2063,6 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
-        "Record_Number": "XR2026-2953",
-        "Applied_Date": "11/07/2026",
-        "Status": "Issued",
-        "Address": "42 CROOKED STICK DR NEWPORT BEACH CA 92660",
-        "Description": "WHOLE HOUSE PEX A REPIPE OF 16 FIXTURES"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
         "Record_Number": "XR2026-2954",
         "Applied_Date": "11/08/2026",
         "Status": "Plan Check Applied",
@@ -2503,6 +2503,15 @@
     },
     {
         "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-3003",
+        "Applied_Date": "11/14/2026",
+        "Status": "Applied",
+        "Address": "204 PEARL AVE NEWPORT BEACH CA 92662",
+        "Description": "INTERIOR IMPROVEMENTS TO AN EXISTING RESIDENCE, WITH EXTERIOR NEW WINDOWS AND DOORS AND ASSOCIATED OPENING MODIFICATIONS; STRUCTURAL MODIFICATIONS; AND INSTALLATION AND UPGRADE OF SHEAR WALLS. PRIMARY BEDROOM MODIFICATIONS INCLUDE PLUMBING FIXTURE RELOCATION. ALL OTHER INTERIOR WORK IS COSMETIC OR REPLACE WITH LIKE-KIND MATERIAL IN EXISTING LOCATION. SITE WORK INCLUDES RAISING FRONT YARD GRADE TO ENTRY LEVEL, LOW RETAINING WALLS LESS THAN 30 INCHES IN HEIGHT, AND MINOR MODIFICATIONS TO EXISTING DRAINAGE. THIS PROJECT DOES NOT EXCEED THE THRESHOLD OF 50% VALUATION, PER THE COVER SHEET FORM \"SUBSTANTIAL IMPROVEMENT COST DETERMINATION\""
+    },
+    {
+        "City": "Newport Beach",
         "Category": "Plan",
         "Record_Number": "PA2026-0235",
         "Applied_Date": "",
@@ -2531,15 +2540,6 @@
     {
         "City": "Newport Beach",
         "Category": "Plan",
-        "Record_Number": "CEO20260076",
-        "Applied_Date": "",
-        "Status": "Approved",
-        "Address": "223 HELIOTROPE AVE NEWPORT BEACH CA 92625",
-        "Description": "CEO to convert an existing California room into a 238 square foot Junior Accessory Dwelling Unit (JADU). The existing single-unit dwelling and 2-car garage will remain. The project meets all development standards of the LCP Implementation Plan."
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Plan",
         "Record_Number": "PA2026-0237",
         "Applied_Date": "",
         "Status": "Void",
@@ -2563,5 +2563,23 @@
         "Status": "Pending",
         "Address": "1101 NEWPORT CENTER DR NEWPORT BEACH CA 92660",
         "Description": "Planned Community Amendment"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Plan",
+        "Record_Number": "PA2026-0240",
+        "Applied_Date": "",
+        "Status": "Pending",
+        "Address": "1577 PLACENTIA AVE NEWPORT BEACH CA 92663",
+        "Description": "Minor Use Permit"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Plan",
+        "Record_Number": "CEO20260076",
+        "Applied_Date": "",
+        "Status": "Approved",
+        "Address": "223 HELIOTROPE AVE NEWPORT BEACH CA 92625",
+        "Description": "CEO to convert an existing California room into a 238 square foot Junior Accessory Dwelling Unit (JADU). The existing single-unit dwelling and 2-car garage will remain. The project meets all development standards of the LCP Implementation Plan."
     }
 ]

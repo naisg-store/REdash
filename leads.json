@@ -1,5 +1,65 @@
 [
   {
+    "id": "26TMP-020636",
+    "date": "11/14/2026",
+    "address": "9152 Elva Cir",
+    "zip": "Unknown",
+    "event": "Residential Combo",
+    "description": "shear wall repair",
+    "status": "Permit Issued",
+    "action": "General Construction",
+    "scope": "Micro / Routine",
+    "contractor": "GC Attached"
+  },
+  {
+    "id": "26TMP-020635",
+    "date": "11/14/2026",
+    "address": "Huntington Beach, CA",
+    "zip": "Unknown",
+    "event": "Residential Combo",
+    "description": "",
+    "status": "Permit Issued",
+    "action": "General Construction",
+    "scope": "Micro / Routine",
+    "contractor": "GC Attached"
+  },
+  {
+    "id": "C2026-008596",
+    "date": "11/14/2026",
+    "address": "9152 Elva Cir",
+    "zip": "Unknown",
+    "event": "Residential Combo",
+    "description": "shear wall repair",
+    "status": "Permit Issued",
+    "action": "General Construction",
+    "scope": "Micro / Routine",
+    "contractor": "GC Attached"
+  },
+  {
+    "id": "E2026-008595",
+    "date": "11/14/2026",
+    "address": "19645 Dearborne Cir",
+    "zip": "Unknown",
+    "event": "Residential Electrical",
+    "description": "Installation of a new 50 amp circuit for a level 2 EV charger per manufacturer's installation instructions.",
+    "status": "Permit Issued",
+    "action": "General Construction",
+    "scope": "Heavy Capital",
+    "contractor": "GC Attached"
+  },
+  {
+    "id": "B2026-008594",
+    "date": "11/14/2026",
+    "address": "16931 Bolsa Chica St",
+    "zip": "Unknown",
+    "event": "Commercial and Industrial Building",
+    "description": "Modify (E) Verizon cellsite (\"Dunbar\"): Remove/replace (3)(E) antennas w/(3)(N) antennas and (6)(E) RRUs w/(3)(N) RRUs w/in (E) church tower. Per WP-2026-012.",
+    "status": "Permit Issued",
+    "action": "General Construction",
+    "scope": "Micro / Routine",
+    "contractor": "GC Attached"
+  },
+  {
     "id": "26TMP-020563",
     "date": "11/13/2026",
     "address": "Huntington Beach, CA",
@@ -4832,42 +4892,6 @@
     "description": "***PLNG*** ***SCHOOL FEE REQ*** (N) 572 SF ATTACHED ADU ***2 BED & 1 BATH***; ADD 594 SF TO (E) MAIN HOME W/ COMPLETE REMODEL & RECONFITURATION OF THE ENTIRE HOME - ADDED (2) BEDROOMS, & (2.5) BATHROOMS; (N) 16 SF PORCH ***MAIN HOME = 1,491 SF LIVING, 456 SF GARAGE W/ 4 BEDS & 3.5 BATHS*** (TOTAL OF HABITABLE SF ADDED = 1,166 SF) (PERCENTAGE OF EXTERIOR WALL ALTERATION = ??%; IF DEMO/ALTERATION OF EXTERIOR WALL EXCEEDS 50% AT ANY POINT IN TIME, A REVISED PLAN IS REQUIRED TO BE SUBMITTED AND REVIEWED AS A NEW HOME ON THE RESIDENTIAL LOT)",
     "status": "Permit Issued",
     "action": "ADU Investor Lead",
-    "scope": "Heavy Capital",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "B2022-004127.REV06",
-    "date": "10/31/2026",
-    "address": "2120 Main St",
-    "zip": "Unknown",
-    "event": "Revision",
-    "description": "Revised podium and mat slab structural plans, details, & schedules per HB Correction Notice 10-21-26.",
-    "status": "Permit Issued",
-    "action": "General Construction",
-    "scope": "Micro / Routine",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "C2026-008231",
-    "date": "10/31/2026",
-    "address": "8522 Wave Cir",
-    "zip": "Unknown",
-    "event": "Residential Combo",
-    "description": "REMODEL KITCHEN & DINING AREA: INSTALL (N) ISLAND, REMOVE LOAD BEARING WALLS & MEPS (SEE PLANS & ENGINEERING)",
-    "status": "Permit Issued",
-    "action": "Major Remodel / Flipper",
-    "scope": "Mid-Scale",
-    "contractor": "GC Attached"
-  },
-  {
-    "id": "M2026-008230",
-    "date": "10/31/2026",
-    "address": "16242 Magellan Ln",
-    "zip": "Unknown",
-    "event": "Residential Mechanical",
-    "description": "(N) 4-TON HEAT PUMP AT SIDEYARD; R/R AIR HANDLER 48K BTU ***CHEERS # 426-A020334369A*** ***30\u201d SETBACK TO PROPERTY LINE REQUIRED FOR A/C UNITS*** (A SEPARATE ELECTRICAL PERMIT IS REQUIRED FOR NEW OR REPLACEMENT OF DISCONNECT SWITCH)",
-    "status": "Permit Issued",
-    "action": "General Construction",
     "scope": "Heavy Capital",
     "contractor": "GC Attached"
   }
