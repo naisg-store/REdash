@@ -65,6 +65,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "DH2026-0421",
+        "Applied_Date": "11/16/2026",
+        "Status": "Applied",
+        "Address": "4321 JAMBOREE RD NEWPORT BEACH CA 92660",
+        "Description": "COMM - NOISE MITIGATION \"TOWER SEMICONDUCTOR\""
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "E2026-0892",
         "Applied_Date": "11/09/2026",
         "Status": "Issued",
@@ -272,6 +281,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "E2026-0915",
+        "Applied_Date": "11/15/2026",
+        "Status": "Issued",
+        "Address": "7002 OCEAN FRONT W Unit: B NEWPORT BEACH CA 92663",
+        "Description": "Add 5 small heaters hardwired to standard outlets in each room (4 bedrooms) and one in or near living room. The heater recommended by the City of Newport Beach is a Envi E Heat 120V 500-watt heater."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "FC2026-0166",
         "Applied_Date": "11/09/2026",
         "Status": "Plan Check Applied",
@@ -304,6 +322,15 @@
         "Status": "Plan Check Applied",
         "Address": "1441 AVOCADO AVE Unit: 802 NEWPORT BEACH CA 92660",
         "Description": "COMM FIRE ALARM SYSTEM 35 DEVICES (XC2026-0096)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "FC2026-0170",
+        "Applied_Date": "11/16/2026",
+        "Status": "Issued",
+        "Address": "1617 WESTCLIFF DR Unit: 207 NEWPORT BEACH CA 92660",
+        "Description": "COMM FIRE SPRINKLER SYSTEM 3 HEADS (XC2025-5421)"
     },
     {
         "City": "Newport Beach",
@@ -713,6 +740,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "NB2026-0129",
+        "Applied_Date": "11/16/2026",
+        "Status": "Applied",
+        "Address": "",
+        "Description": "Reinforced concrete"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "P2026-1420",
         "Applied_Date": "11/09/2026",
         "Status": "Issued",
@@ -1046,6 +1082,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "PI2026-1378",
+        "Applied_Date": "11/16/2026",
+        "Status": "Applied",
+        "Address": "205 VIA KORON NEWPORT BEACH CA 92663",
+        "Description": "SFR SOLAR PV ENERGY STORAGE SYSTEM 27 KW (2)"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "PV2026-0333",
         "Applied_Date": "11/09/2026",
         "Status": "Plan Check Applied",
@@ -1140,7 +1185,7 @@
         "Applied_Date": "11/09/2026",
         "Status": "Applied",
         "Address": "1 CASTAWAYS LN NEWPORT BEACH CA 92663",
-        "Description": "REV1 DELTA 4 ARCH DELTA 2 EMP- RELOCATE CONDENSOR, LIGHTING AND EMP. REVISE LANDING AT EXERIOR DOORS"
+        "Description": "REV 1 DELTA 4 ARCH DELTA 2 EMP - RELOCATE CONDENSOR, LIGHTING AND EMP REVISIONS, REVISE LANDINGS AT EXERIOR DOORS"
     },
     {
         "City": "Newport Beach",
@@ -1492,6 +1537,24 @@
         "Status": "Issued",
         "Address": "RHINE WHARF CA",
         "Description": "Use of lot for demo of floating dock"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "RW2026-0033",
+        "Applied_Date": "11/15/2026",
+        "Status": "Issued",
+        "Address": "RHINE WHARF CA",
+        "Description": "Ultra Pacific needs to use the Rhine Wharf to offload fish on 11/16/26"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "RW2026-0034",
+        "Applied_Date": "11/16/2026",
+        "Status": "Pending",
+        "Address": "RHINE WHARF CA",
+        "Description": "Unload commercial fishing vessel"
     },
     {
         "City": "Newport Beach",
@@ -1901,6 +1964,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "SEFD2026-0213",
+        "Applied_Date": "11/15/2026",
+        "Status": "Applied",
+        "Address": "1 HOAG DR NEWPORT BEACH CA 92663",
+        "Description": "Annual Hoag Hospital Employee Holiday Party on December 3rd, 2026. Employees will be sent down in shifts to have a meal, take a photo op, and grab a gift."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "SERSS2026-0146",
         "Applied_Date": "11/12/2026",
         "Status": "In Review",
@@ -2000,6 +2072,15 @@
     {
         "City": "Newport Beach",
         "Category": "Permit",
+        "Record_Number": "U2026-0901",
+        "Applied_Date": "11/16/2026",
+        "Status": "Applied",
+        "Address": "115 BAY FRONT N NEWPORT BEACH CA 92662",
+        "Description": "SFR- (N) CMU RETAINING WALL 3\u2019-6\u201d HIGH MAX x 28 LF ALONG BAY FRONT N"
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
         "Record_Number": "XC2026-0550",
         "Applied_Date": "11/10/2026",
         "Status": "Issued",
@@ -2059,15 +2140,6 @@
         "Status": "Applied",
         "Address": "3348 COAST HWY E NEWPORT BEACH CA 92625",
         "Description": "COMM TI - **CHANGE OF SCOPE** SPEC SUITE, 836 SF"
-    },
-    {
-        "City": "Newport Beach",
-        "Category": "Permit",
-        "Record_Number": "XR2026-2954",
-        "Applied_Date": "11/08/2026",
-        "Status": "Plan Check Applied",
-        "Address": "1738 MIRAMAR DR NEWPORT BEACH CA 92661",
-        "Description": "NEW SFR W/ATTACHED GARAGE 4033/593 SF"
     },
     {
         "City": "Newport Beach",
@@ -2509,6 +2581,24 @@
         "Status": "Applied",
         "Address": "204 PEARL AVE NEWPORT BEACH CA 92662",
         "Description": "INTERIOR IMPROVEMENTS TO AN EXISTING RESIDENCE, WITH EXTERIOR NEW WINDOWS AND DOORS AND ASSOCIATED OPENING MODIFICATIONS; STRUCTURAL MODIFICATIONS; AND INSTALLATION AND UPGRADE OF SHEAR WALLS. PRIMARY BEDROOM MODIFICATIONS INCLUDE PLUMBING FIXTURE RELOCATION. ALL OTHER INTERIOR WORK IS COSMETIC OR REPLACE WITH LIKE-KIND MATERIAL IN EXISTING LOCATION. SITE WORK INCLUDES RAISING FRONT YARD GRADE TO ENTRY LEVEL, LOW RETAINING WALLS LESS THAN 30 INCHES IN HEIGHT, AND MINOR MODIFICATIONS TO EXISTING DRAINAGE. THIS PROJECT DOES NOT EXCEED THE THRESHOLD OF 50% VALUATION, PER THE COVER SHEET FORM \"SUBSTANTIAL IMPROVEMENT COST DETERMINATION\""
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-3004",
+        "Applied_Date": "11/16/2026",
+        "Status": "Applied",
+        "Address": "115 BAY FRONT N NEWPORT BEACH CA 92662",
+        "Description": "SFR - (N) CMU GAS FIRE PIT, 42\u201d HIGH MAX."
+    },
+    {
+        "City": "Newport Beach",
+        "Category": "Permit",
+        "Record_Number": "XR2026-3005",
+        "Applied_Date": "11/16/2026",
+        "Status": "Applied",
+        "Address": "115 BAY FRONT N NEWPORT BEACH CA 92662",
+        "Description": "SFR - (N) CMU BBQ W/ GAS & ELEC, 42\u201d HIGH MAX"
     },
     {
         "City": "Newport Beach",
